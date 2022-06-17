@@ -61,7 +61,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
               children: [
                 TweenAnimationBuilder(
                   duration: AppDefaults.duration,
-                  tween: Tween<double>(begin: 0, end: 0.34 * (currentPage + 1)),
+                  tween: Tween<double>(
+                      begin: 0, end: (1 / items.length) * (currentPage + 1)),
                   curve: Curves.easeInOutBack,
                   builder: (context, double value, _) => SizedBox(
                     height: 70,
