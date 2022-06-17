@@ -18,20 +18,6 @@ class _OnboardingPageState extends State<OnboardingPage> {
   late PageController controller;
   List<OnboardingModel> items = OnboardingData.items;
 
-  onForwardTap() {
-    if (currentPage != items.length - 1) {
-      controller.animateToPage(
-        currentPage + 1,
-        duration: AppDefaults.duration,
-        curve: Curves.easeIn,
-      );
-    } else {
-      /// navigate to the next page
-    }
-  }
-
-  double circularProgressValue = 0.0;
-
   onPageChange(int value) {
     currentPage = value;
     setState(() {});
@@ -89,12 +75,11 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: onForwardTap,
-                  style: ElevatedButton.styleFrom(
-                    shape: const CircleBorder(),
-                    elevation: 1,
-                    padding: const EdgeInsets.all(AppDefaults.padding),
-                  ),
+                  onPressed: () {
+                    controller.nextPage(
+                        duration: AppDefaults.duration, curve: Curves.ease);
+                  },
+                  style: ElevatedButton.styleFrom(shape: const CircleBorder()),
                   child: SvgPicture.asset(
                     AppIcons.arrowForward,
                     color: Colors.white,
@@ -102,6 +87,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 ),
               ],
             ),
+            const SizedBox(height: AppDefaults.padding),
           ],
         ),
       ),
