@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:step_progress_indicator/step_progress_indicator.dart';
 
 import '../../core/constants/constants.dart';
 import 'components/onboarding_view.dart';
@@ -74,15 +73,19 @@ class _OnboardingPageState extends State<OnboardingPage> {
             Stack(
               alignment: AlignmentDirectional.center,
               children: [
-                SizedBox(
-                  width: 70,
-                  height: 70,
-                  child: CircularStepProgressIndicator(
-                    totalSteps: items.length,
-                    currentStep: currentPage + 1,
-                    selectedColor: AppColors.primary,
-                    unselectedColor: AppColors.cardColor,
-                    padding: 0,
+                TweenAnimationBuilder(
+                  duration: AppDefaults.duration,
+                  tween: Tween<double>(begin: 0, end: 0.34 * (currentPage + 1)),
+                  curve: Curves.easeInOutBack,
+                  builder: (context, double value, _) => SizedBox(
+                    height: 70,
+                    width: 70,
+                    child: CircularProgressIndicator(
+                      value: value,
+                      strokeWidth: 6,
+                      backgroundColor: AppColors.cardColor,
+                      color: AppColors.primary,
+                    ),
                   ),
                 ),
                 ElevatedButton(
