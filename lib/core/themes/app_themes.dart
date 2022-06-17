@@ -5,9 +5,11 @@ import 'package:grocery/core/constants/app_defaults.dart';
 class AppTheme {
   static get defaultTheme => ThemeData(
         colorSchemeSeed: AppColors.primary,
-        textTheme: ThemeData.light().textTheme.apply(
-              fontFamily: 'Gilroy',
-            ),
+        fontFamily: "Gilroy",
+        textTheme: const TextTheme(
+          bodyLarge: TextStyle(color: AppColors.placeholder),
+          bodyMedium: TextStyle(color: AppColors.placeholder),
+        ),
         scaffoldBackgroundColor: Colors.white,
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(

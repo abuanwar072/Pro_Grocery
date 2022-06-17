@@ -43,7 +43,6 @@ class OnboardingView extends StatelessWidget {
                 padding: const EdgeInsets.all(AppDefaults.padding),
                 child: Text(
                   data.description,
-                  style: Theme.of(context).textTheme.bodyLarge,
                   textAlign: TextAlign.center,
                 ),
               ),

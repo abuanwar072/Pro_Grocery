@@ -25,7 +25,7 @@ class IntroPageBodyArea extends StatelessWidget {
                   Text(
                     'Welcome to our',
                     style: Theme.of(context).textTheme.headline4?.copyWith(
-                        fontWeight: FontWeight.w700, color: Colors.black),
+                        fontWeight: FontWeight.bold, color: Colors.black),
                   ),
                   Text(
                     'E-Grocery',
@@ -49,7 +49,7 @@ class IntroPageBodyArea extends StatelessWidget {
                     child: const Text('Continue with Email or Phone'),
                   ),
                 ),
-                const SizedBox(height: AppDefaults.margin),
+                const SizedBox(height: AppDefaults.padding),
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
