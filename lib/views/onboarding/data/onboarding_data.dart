@@ -1,5 +1,5 @@
-import 'package:grocery/core/constants/app_images.dart';
-import 'package:grocery/views/onboarding/data/onboarding_model.dart';
+import '../../../core/constants/app_images.dart';
+import 'onboarding_model.dart';
 
 class OnboardingData {
   static List<OnboardingModel> items = [

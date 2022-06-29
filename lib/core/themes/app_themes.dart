@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:grocery/core/constants/app_colors.dart';
-import 'package:grocery/core/constants/app_defaults.dart';
+import 'package:flutter/services.dart';
+import '../constants/app_colors.dart';
+import '../constants/app_defaults.dart';
 
 class AppTheme {
   static get defaultTheme => ThemeData(
@@ -11,6 +12,20 @@ class AppTheme {
           bodyMedium: TextStyle(color: AppColors.placeholder),
         ),
         scaffoldBackgroundColor: Colors.white,
+        brightness: Brightness.light,
+        appBarTheme: const AppBarTheme(
+          elevation: 0,
+          backgroundColor: Colors.transparent,
+          iconTheme: IconThemeData(color: Colors.black),
+          titleTextStyle: TextStyle(
+            color: Colors.black,
+            fontWeight: FontWeight.bold,
+            fontFamily: "Gilroy",
+          ),
+          systemOverlayStyle: SystemUiOverlayStyle(
+            statusBarBrightness: Brightness.light,
+          ),
+        ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             primary: AppColors.primary,
@@ -20,6 +35,30 @@ class AppTheme {
               borderRadius: AppDefaults.borderRadius,
             ),
             textStyle: const TextStyle(fontWeight: FontWeight.w700),
+          ),
+        ),
+        outlinedButtonTheme: OutlinedButtonThemeData(
+          style: OutlinedButton.styleFrom(
+            padding: const EdgeInsets.all(AppDefaults.padding),
+            elevation: 0,
+            shape: RoundedRectangleBorder(
+              borderRadius: AppDefaults.borderRadius,
+            ),
+            textStyle: const TextStyle(fontWeight: FontWeight.w700),
+          ),
+        ),
+        inputDecorationTheme: const InputDecorationTheme(
+          fillColor: AppColors.textInputBackground,
+          filled: true,
+          floatingLabelBehavior: FloatingLabelBehavior.never,
+          border: UnderlineInputBorder(
+            borderSide: BorderSide(width: 0.0),
+          ),
+          enabledBorder: UnderlineInputBorder(
+            borderSide: BorderSide(width: 0.1),
+          ),
+          focusedBorder: UnderlineInputBorder(
+            borderSide: BorderSide(width: 0.1),
           ),
         ),
       );
