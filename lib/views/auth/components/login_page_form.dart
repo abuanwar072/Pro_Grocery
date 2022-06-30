@@ -37,7 +37,13 @@ class _LoginPageFormState extends State<LoginPageForm> {
     return Form(
       key: _key,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Text("Phone Number"),
+          const SizedBox(height: 8),
+          TextFormField(
+            keyboardType: TextInputType.number,
+          ),
           Padding(
             padding: const EdgeInsets.all(AppDefaults.padding),
             child: CustomTextField(
