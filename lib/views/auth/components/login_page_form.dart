@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../core/components/custom_text_field.dart';
 import '../../../core/constants/constants.dart';
 import '../../../core/routes/app_routes.dart';
+import '../../../core/themes/app_themes.dart';
 import '../../../core/utils/validators.dart';
 import 'login_button.dart';
 
@@ -34,57 +34,65 @@ class _LoginPageFormState extends State<LoginPageForm> {
 
   @override
   Widget build(BuildContext context) {
-    return Form(
-      key: _key,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text("Phone Number"),
-          const SizedBox(height: 8),
-          TextFormField(
-            keyboardType: TextInputType.number,
-          ),
-          Padding(
-            padding: const EdgeInsets.all(AppDefaults.padding),
-            child: CustomTextField(
-              label: 'Phone Number',
-              validator: Validators.requiredWithFieldName('Phone'),
-              textInputAction: TextInputAction.next,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(
-              horizontal: AppDefaults.padding,
-            ),
-            child: CustomTextField(
-              label: 'Password',
-              validator: Validators.password,
-              onFieldSubmitted: (v) => onLogin(),
-              textInputAction: TextInputAction.done,
-              isObscured: isPasswordShown,
-              suffixIcon: Material(
-                color: Colors.transparent,
-                child: IconButton(
-                  onPressed: onPassShowClicked,
-                  icon: SvgPicture.asset(
-                    AppIcons.eye,
-                    width: 24,
+    return Theme(
+      data: AppTheme.defaultTheme.copyWith(
+        inputDecorationTheme: AppTheme.secondaryInputDecorationTheme,
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(AppDefaults.padding),
+        child: Form(
+          key: _key,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Phone Field
+              const Text("Phone Number"),
+              const SizedBox(height: 8),
+              TextFormField(
+                keyboardType: TextInputType.number,
+                validator: Validators.requiredWithFieldName('Phone'),
+                textInputAction: TextInputAction.next,
+              ),
+              const SizedBox(height: AppDefaults.padding),
+
+              // Password Field
+              const Text("Password"),
+              const SizedBox(height: 8),
+              TextFormField(
+                validator: Validators.password,
+                onFieldSubmitted: (v) => onLogin(),
+                textInputAction: TextInputAction.done,
+                obscureText: isPasswordShown,
+                decoration: InputDecoration(
+                  suffixIcon: Material(
+                    color: Colors.transparent,
+                    child: IconButton(
+                      onPressed: onPassShowClicked,
+                      icon: SvgPicture.asset(
+                        AppIcons.eye,
+                        width: 24,
+                      ),
+                    ),
                   ),
                 ),
               ),
-            ),
+
+              // Forget Password Button
+              Align(
+                alignment: Alignment.centerRight,
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoutes.forgotPassword);
+                  },
+                  child: const Text('Forget Password?'),
+                ),
+              ),
+
+              // Login Button
+              LoginButton(onPressed: onLogin),
+            ],
           ),
-          Align(
-            alignment: Alignment.centerRight,
-            child: TextButton(
-              onPressed: () {
-                Navigator.pushNamed(context, AppRoutes.forgotPassword);
-              },
-              child: const Text('Forget Password?'),
-            ),
-          ),
-          LoginButton(onPressed: onLogin),
-        ],
+        ),
       ),
     );
   }

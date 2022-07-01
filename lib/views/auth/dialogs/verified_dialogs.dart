@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+
 import '../../../core/components/network_image.dart';
 import '../../../core/constants/app_defaults.dart';
 import '../../../core/constants/app_images.dart';
-
 import '../../../core/routes/app_routes.dart';
 
 class VerifiedDialog extends StatelessWidget {

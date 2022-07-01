@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+
 import '../../core/components/app_back_button.dart';
-import '../../core/components/custom_text_field.dart';
 import '../../core/constants/app_colors.dart';
 import '../../core/constants/app_defaults.dart';
 import '../../core/routes/app_routes.dart';
@@ -47,10 +47,14 @@ class ForgetPasswordPage extends StatelessWidget {
                       'Please enter your number. We will send a code\nto your phone to reset your password.',
                     ),
                     const SizedBox(height: AppDefaults.padding * 3),
-                    const CustomTextField(
-                      label: 'Phone Number',
-                      hasBorder: true,
+                    const Text("Phone Number"),
+                    const SizedBox(height: 8),
+                    TextFormField(
+                      autofocus: true,
+                      textInputAction: TextInputAction.next,
+                      keyboardType: TextInputType.number,
                     ),
+                    const SizedBox(height: AppDefaults.padding),
                     const SizedBox(height: AppDefaults.padding),
                     SizedBox(
                       width: double.infinity,

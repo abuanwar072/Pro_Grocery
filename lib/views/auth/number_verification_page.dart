@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import '../../core/themes/app_themes.dart';
 import '../../core/components/network_image.dart';
 import '../../core/constants/app_colors.dart';
 import '../../core/constants/app_defaults.dart';
@@ -123,7 +125,6 @@ class NumberVerificationHeader extends StatelessWidget {
   }
 }
 
-/// TODO: Make it more polished
 class OTPTextFields extends StatelessWidget {
   const OTPTextFields({
     Key? key,
@@ -131,16 +132,103 @@ class OTPTextFields extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: const [
-        Expanded(child: TextField()),
-        SizedBox(width: AppDefaults.padding),
-        Expanded(child: TextField()),
-        SizedBox(width: AppDefaults.padding),
-        Expanded(child: TextField()),
-        SizedBox(width: AppDefaults.padding),
-        Expanded(child: TextField()),
-      ],
+    return Theme(
+      data: AppTheme.defaultTheme.copyWith(
+        inputDecorationTheme: AppTheme.otpInputDecorationTheme,
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: [
+          SizedBox(
+            width: 68,
+            height: 68,
+            child: TextFormField(
+              onChanged: (v) {
+                if (v.length == 1) {
+                  FocusScope.of(context).nextFocus();
+                } else {
+                  FocusScope.of(context).previousFocus();
+                }
+              },
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.headline6?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+              inputFormatters: [
+                LengthLimitingTextInputFormatter(1),
+                FilteringTextInputFormatter.digitsOnly,
+              ],
+              keyboardType: TextInputType.number,
+            ),
+          ),
+          SizedBox(
+            width: 68,
+            height: 68,
+            child: TextFormField(
+              onChanged: (v) {
+                if (v.length == 1) {
+                  FocusScope.of(context).nextFocus();
+                } else {
+                  FocusScope.of(context).previousFocus();
+                }
+              },
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.headline6?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+              inputFormatters: [
+                LengthLimitingTextInputFormatter(1),
+                FilteringTextInputFormatter.digitsOnly,
+              ],
+              keyboardType: TextInputType.number,
+            ),
+          ),
+          SizedBox(
+            width: 68,
+            height: 68,
+            child: TextFormField(
+              onChanged: (v) {
+                if (v.length == 1) {
+                  FocusScope.of(context).nextFocus();
+                } else {
+                  FocusScope.of(context).previousFocus();
+                }
+              },
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.headline6?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+              inputFormatters: [
+                LengthLimitingTextInputFormatter(1),
+                FilteringTextInputFormatter.digitsOnly,
+              ],
+              keyboardType: TextInputType.number,
+            ),
+          ),
+          SizedBox(
+            width: 68,
+            height: 68,
+            child: TextFormField(
+              onChanged: (v) {
+                if (v.length == 1) {
+                  FocusScope.of(context).nextFocus();
+                } else {
+                  FocusScope.of(context).previousFocus();
+                }
+              },
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.headline6?.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+              inputFormatters: [
+                LengthLimitingTextInputFormatter(1),
+                FilteringTextInputFormatter.digitsOnly,
+              ],
+              keyboardType: TextInputType.number,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

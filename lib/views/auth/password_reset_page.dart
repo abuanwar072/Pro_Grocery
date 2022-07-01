@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../core/components/app_back_button.dart';
-import '../../core/components/custom_text_field.dart';
 import '../../core/constants/constants.dart';
 
 class PasswordResetPage extends StatelessWidget {
@@ -42,14 +41,17 @@ class PasswordResetPage extends StatelessWidget {
                           ?.copyWith(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: AppDefaults.padding * 3),
-                    const CustomTextField(
-                      label: 'New Password',
-                      hasBorder: true,
+                    const Text("New Password"),
+                    const SizedBox(height: 8),
+                    TextFormField(
+                      autofocus: true,
+                      textInputAction: TextInputAction.next,
                     ),
                     const SizedBox(height: AppDefaults.padding),
-                    const CustomTextField(
-                      label: 'Confirm Password',
-                      hasBorder: true,
+                    const Text("Confirm Password"),
+                    const SizedBox(height: 8),
+                    TextFormField(
+                      textInputAction: TextInputAction.next,
                     ),
                     const SizedBox(height: AppDefaults.padding * 2),
                     SizedBox(

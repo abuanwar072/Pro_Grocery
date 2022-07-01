@@ -4,7 +4,7 @@ import '../constants/app_colors.dart';
 import '../constants/app_defaults.dart';
 
 class AppTheme {
-  static get defaultTheme {
+  static ThemeData get defaultTheme {
     return ThemeData(
       colorSchemeSeed: AppColors.primary,
       fontFamily: "Gilroy",
@@ -48,19 +48,62 @@ class AppTheme {
           textStyle: const TextStyle(fontWeight: FontWeight.w700),
         ),
       ),
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+          textStyle: const TextStyle(
+            fontWeight: FontWeight.bold,
+            fontFamily: 'Gilroy',
+          ),
+        ),
+      ),
       inputDecorationTheme: defaultInputDecorationTheme,
     );
   }
-}
 
-const defaultInputDecorationTheme = const InputDecorationTheme(
-  fillColor: AppColors.textInputBackground,
-  filled: true,
-  floatingLabelBehavior: FloatingLabelBehavior.never,
-  border: OutlineInputBorder(
-    borderSide: BorderSide.none,
-    borderRadius: BorderRadius.all(Radius.circular(8)),
-  ),
-  enabledBorder: OutlineInputBorder(borderSide: BorderSide.none),
-  focusedBorder: OutlineInputBorder(borderSide: BorderSide.none),
-);
+  /* <---- Input Decorations Theme -----> */
+  static const defaultInputDecorationTheme = InputDecorationTheme(
+    fillColor: AppColors.textInputBackground,
+    floatingLabelBehavior: FloatingLabelBehavior.never,
+    border: OutlineInputBorder(
+      borderSide: BorderSide(width: 0.1),
+      borderRadius: BorderRadius.all(Radius.circular(8)),
+    ),
+    enabledBorder: OutlineInputBorder(
+      borderSide: BorderSide(width: 0.1),
+      borderRadius: BorderRadius.all(Radius.circular(8)),
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderSide: BorderSide(width: 0.1),
+      borderRadius: BorderRadius.all(Radius.circular(8)),
+    ),
+    suffixIconColor: AppColors.placeholder,
+  );
+
+  static const secondaryInputDecorationTheme = InputDecorationTheme(
+    fillColor: AppColors.textInputBackground,
+    filled: true,
+    floatingLabelBehavior: FloatingLabelBehavior.never,
+    border: OutlineInputBorder(
+      borderSide: BorderSide.none,
+      borderRadius: BorderRadius.all(Radius.circular(8)),
+    ),
+    enabledBorder: OutlineInputBorder(borderSide: BorderSide.none),
+    focusedBorder: OutlineInputBorder(borderSide: BorderSide.none),
+  );
+
+  static final otpInputDecorationTheme = InputDecorationTheme(
+    floatingLabelBehavior: FloatingLabelBehavior.never,
+    border: OutlineInputBorder(
+      borderSide: const BorderSide(width: 0.1),
+      borderRadius: BorderRadius.circular(25),
+    ),
+    enabledBorder: OutlineInputBorder(
+      borderSide: const BorderSide(width: 0.1),
+      borderRadius: BorderRadius.circular(25),
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderSide: const BorderSide(width: 0.1),
+      borderRadius: BorderRadius.circular(25),
+    ),
+  );
+}

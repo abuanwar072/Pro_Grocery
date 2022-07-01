@@ -35,10 +35,10 @@ class SocialLogins extends StatelessWidget {
                   const SizedBox(width: 8),
                   Text(
                     'Google',
-                    style: Theme.of(context)
-                        .textTheme
-                        .button
-                        ?.copyWith(color: Colors.red),
+                    style: Theme.of(context).textTheme.button?.copyWith(
+                          color: Colors.red,
+                          fontWeight: FontWeight.bold,
+                        ),
                   ),
                 ],
               ),
@@ -65,10 +65,10 @@ class SocialLogins extends StatelessWidget {
                   const SizedBox(width: 8),
                   Text(
                     'Apple',
-                    style: Theme.of(context)
-                        .textTheme
-                        .button
-                        ?.copyWith(color: Colors.black),
+                    style: Theme.of(context).textTheme.button?.copyWith(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                        ),
                   ),
                 ],
               ),

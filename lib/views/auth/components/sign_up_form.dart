@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import '../../../core/components/custom_text_field.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_svg/svg.dart';
 
 import '../../../core/constants/constants.dart';
+import '../../../core/utils/validators.dart';
 import 'already_have_accout.dart';
 import 'sign_up_button.dart';
 
@@ -21,24 +23,47 @@ class SignUpForm extends StatelessWidget {
         borderRadius: AppDefaults.borderRadius,
       ),
       child: Column(
-        children: const [
-          CustomTextField(
-            label: 'Name',
-            hasBorder: true,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text("Name"),
+          const SizedBox(height: 8),
+          TextFormField(
+            validator: Validators.requiredWithFieldName('Name'),
+            textInputAction: TextInputAction.next,
           ),
-          SizedBox(height: AppDefaults.padding),
-          CustomTextField(
-            label: 'Phone Number',
-            hasBorder: true,
+          const SizedBox(height: AppDefaults.padding),
+          const Text("Phone Number"),
+          const SizedBox(height: 8),
+          TextFormField(
+            textInputAction: TextInputAction.next,
+            validator: Validators.required,
+            keyboardType: TextInputType.number,
+            inputFormatters: [FilteringTextInputFormatter.digitsOnly],
           ),
-          SizedBox(height: AppDefaults.padding),
-          CustomTextField(
-            label: 'Password',
-            hasBorder: true,
+          const SizedBox(height: AppDefaults.padding),
+          const Text("Password"),
+          const SizedBox(height: 8),
+          TextFormField(
+            validator: Validators.required,
+            textInputAction: TextInputAction.next,
+            obscureText: true,
+            decoration: InputDecoration(
+              suffixIcon: Material(
+                color: Colors.transparent,
+                child: IconButton(
+                  onPressed: () {},
+                  icon: SvgPicture.asset(
+                    AppIcons.eye,
+                    width: 24,
+                  ),
+                ),
+              ),
+            ),
           ),
-          SignUpButton(),
-          AlreadyHaveAnAccount(),
-          SizedBox(height: AppDefaults.padding),
+          const SizedBox(height: AppDefaults.padding),
+          const SignUpButton(),
+          const AlreadyHaveAnAccount(),
+          const SizedBox(height: AppDefaults.padding),
         ],
       ),
     );
