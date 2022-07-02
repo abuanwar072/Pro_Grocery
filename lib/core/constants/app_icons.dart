@@ -2,6 +2,7 @@ class AppIcons {
   static const add = 'assets/icons/add.svg';
   static const appleIconRounded = 'assets/icons/apple_icon_rounded.svg';
   static const appleIcon = 'assets/icons/apple_icon.svg';
+  static const eye = 'assets/icons/eye.svg';
   static const arrowBackward = 'assets/icons/arrow_backward.svg';
   static const arrowForward = 'assets/icons/arrow_forward.svg';
   static const cart = 'assets/icons/cart.svg';

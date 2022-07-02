@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../core/constants/constants.dart';
+import '../../core/routes/app_routes.dart';
 import 'components/onboarding_view.dart';
 import 'data/onboarding_data.dart';
 import 'data/onboarding_model.dart';
@@ -21,6 +22,21 @@ class _OnboardingPageState extends State<OnboardingPage> {
   onPageChange(int value) {
     currentPage = value;
     setState(() {});
+  }
+
+  _gotoNextPage() {
+    if (currentPage < items.length - 1) {
+      controller.nextPage(
+        duration: AppDefaults.duration,
+        curve: Curves.ease,
+      );
+    } else {
+      _gotoLoginSignUp();
+    }
+  }
+
+  _gotoLoginSignUp() {
+    Navigator.pushNamed(context, AppRoutes.introLogin);
   }
 
   @override
@@ -61,7 +77,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
               children: [
                 TweenAnimationBuilder(
                   duration: AppDefaults.duration,
-                  tween: Tween<double>(begin: 0, end: 0.34 * (currentPage + 1)),
+                  tween: Tween<double>(
+                      begin: 0, end: (1 / items.length) * (currentPage + 1)),
                   curve: Curves.easeInOutBack,
                   builder: (context, double value, _) => SizedBox(
                     height: 70,
@@ -75,10 +92,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {
-                    controller.nextPage(
-                        duration: AppDefaults.duration, curve: Curves.ease);
-                  },
+                  onPressed: _gotoNextPage,
                   style: ElevatedButton.styleFrom(shape: const CircleBorder()),
                   child: SvgPicture.asset(
                     AppIcons.arrowForward,

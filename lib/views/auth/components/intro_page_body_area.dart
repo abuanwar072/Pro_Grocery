@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:grocery/core/constants/app_defaults.dart';
-import 'package:grocery/core/routes/app_routes.dart';
+import '../../../core/constants/app_defaults.dart';
+import '../../../core/routes/app_routes.dart';
 
 import '../../../core/constants/app_colors.dart';
 
@@ -45,7 +45,7 @@ class IntroPageBodyArea extends StatelessWidget {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () =>
-                        Navigator.pushNamed(context, AppRoutes.onboarding),
+                        Navigator.pushNamed(context, AppRoutes.loginOrSignup),
                     child: const Text('Continue with Email or Phone'),
                   ),
                 ),
@@ -54,7 +54,7 @@ class IntroPageBodyArea extends StatelessWidget {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () =>
-                        Navigator.pushNamed(context, AppRoutes.onboarding),
+                        Navigator.pushNamed(context, AppRoutes.signup),
                     style: ElevatedButton.styleFrom(
                       primary: Colors.white,
                       onPrimary: Colors.black,
