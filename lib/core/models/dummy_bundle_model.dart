@@ -1,15 +1,14 @@
-class ProductModel {
+class BundleModel {
   String name;
-  String weight;
   String cover;
-  List<String> images;
+  List<String> itemNames;
   double price;
   double mainPrice;
-  ProductModel({
+
+  BundleModel({
     required this.name,
-    required this.weight,
     required this.cover,
-    required this.images,
+    required this.itemNames,
     required this.price,
     required this.mainPrice,
   });

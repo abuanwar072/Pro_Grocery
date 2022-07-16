@@ -1,5 +1,6 @@
 class AppIcons {
   static const add = 'assets/icons/add.svg';
+  static const addRounded = 'assets/icons/add_rounded.svg';
   static const appleIconRounded = 'assets/icons/apple_icon_rounded.svg';
   static const appleIcon = 'assets/icons/apple_icon.svg';
   static const eye = 'assets/icons/eye.svg';
@@ -18,4 +19,5 @@ class AppIcons {
   static const search = 'assets/icons/search.svg';
   static const shoppingBag = 'assets/icons/shopping_bag.svg';
   static const twitterIcon = 'assets/icons/twitter_icon.svg';
+  static const sidebarIcon = 'assets/icons/side_bar_icon.svg';
 }

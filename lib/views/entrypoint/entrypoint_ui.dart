@@ -1,11 +1,63 @@
+import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 
+import '../../core/constants/app_defaults.dart';
+import '../cart/cart_page.dart';
+import '../home/home_page.dart';
+import '../menu/menu_page.dart';
+import '../profile/profile_page.dart';
+import '../save/save_page.dart';
+import 'components/app_navigation_bar.dart';
+import 'components/cart_menu_button.dart';
+
 /// This page will contain all the bottom navigation tabs
-class EntryPointUI extends StatelessWidget {
+class EntryPointUI extends StatefulWidget {
   const EntryPointUI({Key? key}) : super(key: key);
 
   @override
+  State<EntryPointUI> createState() => _EntryPointUIState();
+}
+
+class _EntryPointUIState extends State<EntryPointUI> {
+  /// Current Page
+  int currentIndex = 0;
+
+  /// On button navigation tap
+  void onBottomNavigationTap(int index) {
+    currentIndex = index;
+    setState(() {});
+  }
+
+  /// All the pages
+  List<Widget> pages = [
+    const HomePage(),
+    const MenuPage(),
+    const CartPage(),
+    const SavePage(),
+    const ProfilePage(),
+  ];
+
+  @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: PageTransitionSwitcher(
+        transitionBuilder: (child, primaryAnimation, secondaryAnimation) {
+          return SharedAxisTransition(
+            animation: primaryAnimation,
+            secondaryAnimation: secondaryAnimation,
+            transitionType: SharedAxisTransitionType.horizontal,
+            child: child,
+          );
+        },
+        duration: AppDefaults.duration,
+        child: pages[currentIndex],
+      ),
+      floatingActionButton: CartMenuButton(onNavTap: onBottomNavigationTap),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar: AppBottomNavigationBar(
+        currentIndex: currentIndex,
+        onNavTap: onBottomNavigationTap,
+      ),
+    );
   }
 }
