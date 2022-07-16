@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:grocery/views/home/new_item_page.dart';
+import 'package:grocery/views/home/popular_pack_page.dart';
 
 import '../../views/auth/forget_password_page.dart';
 import '../../views/auth/intro_login_page.dart';
@@ -45,6 +47,12 @@ class RouteGenerator {
 
       case AppRoutes.passwordReset:
         return CupertinoPageRoute(builder: (_) => const PasswordResetPage());
+
+      case AppRoutes.newItems:
+        return CupertinoPageRoute(builder: (_) => const NewItemsPage());
+
+      case AppRoutes.popularItems:
+        return CupertinoPageRoute(builder: (_) => const PopularPackPage());
 
       default:
     }

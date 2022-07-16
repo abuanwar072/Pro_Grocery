@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery/core/routes/app_routes.dart';
 import '../../../core/components/product_tile_square.dart';
 
 import '../../../core/components/title_and_action_button.dart';
@@ -15,7 +16,7 @@ class OurNewItem extends StatelessWidget {
       children: [
         TitleAndActionButton(
           title: 'Our New Item',
-          onTap: () {},
+          onTap: () => Navigator.pushNamed(context, AppRoutes.newItems),
         ),
         SingleChildScrollView(
           padding: const EdgeInsets.only(left: AppDefaults.padding),

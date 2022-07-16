@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/components/bundle_tile_square.dart';
 import '../../../core/components/title_and_action_button.dart';
 import '../../../core/constants/constants.dart';
+import '../../../core/routes/app_routes.dart';
 
 class PopularPacks extends StatelessWidget {
   const PopularPacks({
@@ -15,7 +16,7 @@ class PopularPacks extends StatelessWidget {
       children: [
         TitleAndActionButton(
           title: 'Popular Packs',
-          onTap: () {},
+          onTap: () => Navigator.pushNamed(context, AppRoutes.popularItems),
         ),
         SingleChildScrollView(
           padding: const EdgeInsets.only(left: AppDefaults.padding),
