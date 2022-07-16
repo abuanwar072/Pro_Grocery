@@ -20,4 +20,8 @@ class AppIcons {
   static const shoppingBag = 'assets/icons/shopping_bag.svg';
   static const twitterIcon = 'assets/icons/twitter_icon.svg';
   static const sidebarIcon = 'assets/icons/side_bar_icon.svg';
+  static const heart = 'assets/icons/heart.svg';
+  static const addQuantity = 'assets/icons/add_quantity.svg';
+  static const removeQuantity = 'assets/icons/remove_quantity.svg';
+  static const shoppingCart = 'assets/icons/shopping_cart.svg';
 }

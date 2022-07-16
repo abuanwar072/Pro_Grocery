@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:grocery/views/home/new_item_page.dart';
-import 'package:grocery/views/home/popular_pack_page.dart';
+import 'package:grocery/views/home/bundle_product_details_page.dart';
 
 import '../../views/auth/forget_password_page.dart';
 import '../../views/auth/intro_login_page.dart';
@@ -10,6 +9,10 @@ import '../../views/auth/number_verification_page.dart';
 import '../../views/auth/password_reset_page.dart';
 import '../../views/auth/sign_up_page.dart';
 import '../../views/entrypoint/entrypoint_ui.dart';
+import '../../views/home/bundle_details_page.dart';
+import '../../views/home/new_item_page.dart';
+import '../../views/home/popular_pack_page.dart';
+import '../../views/home/product_details_page.dart';
 import '../../views/onboarding/onboarding_page.dart';
 import 'app_routes.dart';
 import 'unknown_page.dart';
@@ -53,6 +56,16 @@ class RouteGenerator {
 
       case AppRoutes.popularItems:
         return CupertinoPageRoute(builder: (_) => const PopularPackPage());
+
+      case AppRoutes.bundleProduct:
+        return CupertinoPageRoute(
+            builder: (_) => const BundleProductDetailsPage());
+
+      case AppRoutes.bundleDetailsPage:
+        return CupertinoPageRoute(builder: (_) => const BundleDetailsPage());
+
+      case AppRoutes.productDetails:
+        return CupertinoPageRoute(builder: (_) => const ProductDetailsPage());
 
       default:
     }
