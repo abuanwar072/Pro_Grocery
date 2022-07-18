@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:grocery/views/home/bundle_create_page.dart';
 import 'package:grocery/views/home/bundle_product_details_page.dart';
 
 import '../../views/auth/forget_password_page.dart';
@@ -66,6 +67,9 @@ class RouteGenerator {
 
       case AppRoutes.productDetails:
         return CupertinoPageRoute(builder: (_) => const ProductDetailsPage());
+
+      case AppRoutes.createMyPack:
+        return CupertinoPageRoute(builder: (_) => const BundleCreatePage());
 
       default:
     }

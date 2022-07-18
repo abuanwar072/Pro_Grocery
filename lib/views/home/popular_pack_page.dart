@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import '../../core/components/app_back_button.dart';
 import '../../core/components/bundle_tile_square.dart';
 import '../../core/constants/constants.dart';
+import '../../core/routes/app_routes.dart';
 
 class PopularPackPage extends StatelessWidget {
   const PopularPackPage({Key? key}) : super(key: key);
@@ -41,7 +42,9 @@ class PopularPackPage extends StatelessWidget {
                 color: Colors.white60,
               ),
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, AppRoutes.createMyPack);
+                },
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
