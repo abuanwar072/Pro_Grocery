@@ -28,4 +28,6 @@ class AppIcons {
   static const paypal = 'assets/icons/paypal.svg';
   static const cashOnDelivery = 'assets/icons/cash_on_delivery.svg';
   static const masterCard = 'assets/icons/master_card.svg';
+  static const filter = 'assets/icons/filter.svg';
+  static const searchTileArrow = 'assets/icons/search_tile_arrow.svg';
 }

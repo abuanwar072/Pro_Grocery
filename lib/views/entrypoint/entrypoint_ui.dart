@@ -1,6 +1,6 @@
 import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
-import 'package:grocery/core/constants/app_colors.dart';
+import '../../core/constants/app_colors.dart';
 
 import '../../core/constants/app_defaults.dart';
 import '../cart/cart_page.dart';

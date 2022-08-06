@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:grocery/views/menu/category_page.dart';
+import '../../views/home/search_page.dart';
+import '../../views/menu/category_page.dart';
 
 import '../../views/auth/forget_password_page.dart';
 import '../../views/auth/intro_login_page.dart';
@@ -38,6 +39,9 @@ class RouteGenerator {
 
       case AppRoutes.entryPoint:
         return CupertinoPageRoute(builder: (_) => const EntryPointUI());
+
+      case AppRoutes.search:
+        return CupertinoPageRoute(builder: (_) => const SearchPage());
 
       case AppRoutes.cartPage:
         return CupertinoPageRoute(builder: (_) => const CartPage());
