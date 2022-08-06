@@ -37,6 +37,7 @@ class AppRoutes {
 
   /// Search Page
   static const search = '/search';
+  static const searchResult = '/searchResult';
 
   /* <---- Profile & Settings -----> */
   static const profile = 'profile';

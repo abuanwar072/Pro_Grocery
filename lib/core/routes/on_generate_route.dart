@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:grocery/views/home/search_result_page.dart';
 import '../../views/home/search_page.dart';
 import '../../views/menu/category_page.dart';
 
@@ -42,6 +43,9 @@ class RouteGenerator {
 
       case AppRoutes.search:
         return CupertinoPageRoute(builder: (_) => const SearchPage());
+
+      case AppRoutes.searchResult:
+        return CupertinoPageRoute(builder: (_) => const SearchResultPage());
 
       case AppRoutes.cartPage:
         return CupertinoPageRoute(builder: (_) => const CartPage());

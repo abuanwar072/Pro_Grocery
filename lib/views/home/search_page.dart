@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:grocery/core/routes/app_routes.dart';
+import 'package:grocery/core/utils/ui_util.dart';
+import 'package:grocery/views/home/dialogs/product_filters_dialog.dart';
 import '../../core/components/app_back_button.dart';
 import '../../core/constants/app_colors.dart';
 import '../../core/constants/app_defaults.dart';
@@ -87,18 +90,30 @@ class _SearchPageHeader extends StatelessWidget {
                     labelText: 'Search',
                     prefixIcon: Padding(
                       padding: const EdgeInsets.all(AppDefaults.padding),
-                      child: SvgPicture.asset(AppIcons.search,
-                          color: AppColors.primary),
+                      child: SvgPicture.asset(
+                        AppIcons.search,
+                        color: AppColors.primary,
+                      ),
                     ),
                     prefixIconConstraints: const BoxConstraints(),
                     contentPadding: EdgeInsets.zero,
+                    constraints: const BoxConstraints(),
                   ),
                   textInputAction: TextInputAction.search,
+                  autofocus: true,
+                  onSubmitted: (v) {
+                    Navigator.pushNamed(context, AppRoutes.searchResult);
+                  },
                 ),
                 Positioned(
                   right: 0,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      UiUtil.openBottomSheet(
+                        context: context,
+                        widget: const ProductFiltersDialog(),
+                      );
+                    },
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(8),

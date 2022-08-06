@@ -58,6 +58,10 @@ class AppTheme {
         ),
       ),
       inputDecorationTheme: defaultInputDecorationTheme,
+      sliderTheme: const SliderThemeData(
+        showValueIndicator: ShowValueIndicator.always,
+        thumbColor: Colors.white,
+      ),
     );
   }
 
