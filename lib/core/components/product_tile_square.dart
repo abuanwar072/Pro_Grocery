@@ -20,6 +20,7 @@ class ProductTileSquare extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: AppDefaults.padding / 2),
       child: Material(
         borderRadius: AppDefaults.borderRadius,
+        color: AppColors.scaffoldBackground,
         child: InkWell(
           borderRadius: AppDefaults.borderRadius,
           onTap: () => Navigator.pushNamed(context, AppRoutes.productDetails),

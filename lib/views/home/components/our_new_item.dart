@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grocery/core/routes/app_routes.dart';
+import '../../../core/routes/app_routes.dart';
 import '../../../core/components/product_tile_square.dart';
 
 import '../../../core/components/title_and_action_button.dart';

@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:grocery/views/home/bundle_create_page.dart';
-import 'package:grocery/views/home/bundle_product_details_page.dart';
+import 'package:grocery/views/menu/category_page.dart';
 
 import '../../views/auth/forget_password_page.dart';
 import '../../views/auth/intro_login_page.dart';
@@ -9,12 +8,19 @@ import '../../views/auth/login_page.dart';
 import '../../views/auth/number_verification_page.dart';
 import '../../views/auth/password_reset_page.dart';
 import '../../views/auth/sign_up_page.dart';
+import '../../views/cart/cart_page.dart';
+import '../../views/cart/checkout_page.dart';
 import '../../views/entrypoint/entrypoint_ui.dart';
+import '../../views/home/bundle_create_page.dart';
 import '../../views/home/bundle_details_page.dart';
+import '../../views/home/bundle_product_details_page.dart';
 import '../../views/home/new_item_page.dart';
+import '../../views/home/order_failed_page.dart';
+import '../../views/home/order_successfull_page.dart';
 import '../../views/home/popular_pack_page.dart';
 import '../../views/home/product_details_page.dart';
 import '../../views/onboarding/onboarding_page.dart';
+import '../../views/save/save_page.dart';
 import 'app_routes.dart';
 import 'unknown_page.dart';
 
@@ -32,6 +38,18 @@ class RouteGenerator {
 
       case AppRoutes.entryPoint:
         return CupertinoPageRoute(builder: (_) => const EntryPointUI());
+
+      case AppRoutes.cartPage:
+        return CupertinoPageRoute(builder: (_) => const CartPage());
+
+      case AppRoutes.savePage:
+        return CupertinoPageRoute(builder: (_) => const SavePage());
+
+      case AppRoutes.checkoutPage:
+        return CupertinoPageRoute(builder: (_) => const CheckoutPage());
+
+      case AppRoutes.categoryDetails:
+        return CupertinoPageRoute(builder: (_) => const CategoryProductPage());
 
       case AppRoutes.login:
         return CupertinoPageRoute(builder: (_) => const LoginPage());
@@ -70,6 +88,12 @@ class RouteGenerator {
 
       case AppRoutes.createMyPack:
         return CupertinoPageRoute(builder: (_) => const BundleCreatePage());
+
+      case AppRoutes.orderSuccessfull:
+        return CupertinoPageRoute(builder: (_) => const OrderSuccessfullPage());
+
+      case AppRoutes.orderFailed:
+        return CupertinoPageRoute(builder: (_) => const OrderFailedPage());
 
       default:
     }

@@ -1,5 +1,6 @@
 import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
+import 'package:grocery/core/constants/app_colors.dart';
 
 import '../../core/constants/app_defaults.dart';
 import '../cart/cart_page.dart';
@@ -32,8 +33,8 @@ class _EntryPointUIState extends State<EntryPointUI> {
   List<Widget> pages = [
     const HomePage(),
     const MenuPage(),
-    const CartPage(),
-    const SavePage(),
+    const CartPage(isHomePage: true),
+    const SavePage(isHomePage: false),
     const ProfilePage(),
   ];
 
@@ -46,6 +47,7 @@ class _EntryPointUIState extends State<EntryPointUI> {
             animation: primaryAnimation,
             secondaryAnimation: secondaryAnimation,
             transitionType: SharedAxisTransitionType.horizontal,
+            fillColor: AppColors.scaffoldBackground,
             child: child,
           );
         },

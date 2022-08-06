@@ -14,7 +14,7 @@ class CartMenuButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      onPressed: () => onNavTap,
+      onPressed: () => onNavTap(2),
       backgroundColor: AppColors.primary,
       child: SvgPicture.asset(AppIcons.cart),
     );

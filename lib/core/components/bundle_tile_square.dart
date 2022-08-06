@@ -19,6 +19,7 @@ class BundleTileSquare extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: AppDefaults.padding / 2),
       child: Material(
+        color: AppColors.scaffoldBackground,
         borderRadius: AppDefaults.borderRadius,
         child: InkWell(
           onTap: () {

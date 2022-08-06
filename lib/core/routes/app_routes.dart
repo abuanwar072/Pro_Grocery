@@ -23,7 +23,7 @@ class AppRoutes {
   static const bundleDetailsPage = '/bundleDetailsPage';
   static const productDetails = '/productDetails';
   static const cartPage = '/cartPage';
-  static const favouriteList = '/favouriteList';
+  static const savePage = '/favouriteList';
   static const checkoutPage = '/checkoutPage';
 
   /// Order Status
