@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../constants/constants.dart';
 
 class AppBackButton extends StatelessWidget {
+  /// Custom Back Button with a custom ICON for this app
   const AppBackButton({
     Key? key,
   }) : super(key: key);

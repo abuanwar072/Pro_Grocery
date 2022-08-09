@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 import '../constants/app_colors.dart';
 import '../constants/app_defaults.dart';
 
@@ -15,8 +16,8 @@ class AppTheme {
       scaffoldBackgroundColor: Colors.white,
       brightness: Brightness.light,
       appBarTheme: const AppBarTheme(
-        elevation: 0,
-        backgroundColor: Colors.transparent,
+        elevation: 0.3,
+        backgroundColor: Colors.white,
         iconTheme: IconThemeData(color: Colors.black),
         titleTextStyle: TextStyle(
           color: Colors.black,
@@ -57,6 +58,10 @@ class AppTheme {
         ),
       ),
       inputDecorationTheme: defaultInputDecorationTheme,
+      sliderTheme: const SliderThemeData(
+        showValueIndicator: ShowValueIndicator.always,
+        thumbColor: Colors.white,
+      ),
     );
   }
 
