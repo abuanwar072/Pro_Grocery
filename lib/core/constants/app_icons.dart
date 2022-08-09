@@ -30,4 +30,14 @@ class AppIcons {
   static const masterCard = 'assets/icons/master_card.svg';
   static const filter = 'assets/icons/filter.svg';
   static const searchTileArrow = 'assets/icons/search_tile_arrow.svg';
+  static const homeProfile = 'assets/icons/home_profile.svg';
+  static const truckIcon = 'assets/icons/truck_icon.svg';
+  static const voucher = 'assets/icons/voucher.svg';
+
+  static const right = 'assets/icons/right.svg';
+  static const profilePerson = 'assets/icons/profile_person.svg';
+  static const profileNotification = 'assets/icons/profile_notification.svg';
+  static const profilePayment = 'assets/icons/profile_payment.svg';
+  static const profileSetting = 'assets/icons/profile_setting.svg';
+  static const profileLogout = 'assets/icons/profile_logout.svg';
 }

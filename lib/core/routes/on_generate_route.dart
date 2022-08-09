@@ -1,7 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:grocery/views/home/search_result_page.dart';
-import '../../views/home/search_page.dart';
-import '../../views/menu/category_page.dart';
 
 import '../../views/auth/forget_password_page.dart';
 import '../../views/auth/intro_login_page.dart';
@@ -21,7 +18,23 @@ import '../../views/home/order_failed_page.dart';
 import '../../views/home/order_successfull_page.dart';
 import '../../views/home/popular_pack_page.dart';
 import '../../views/home/product_details_page.dart';
+import '../../views/home/search_page.dart';
+import '../../views/home/search_result_page.dart';
+import '../../views/menu/category_page.dart';
 import '../../views/onboarding/onboarding_page.dart';
+import '../../views/profile/address/address_page.dart';
+import '../../views/profile/address/new_address_page.dart';
+import '../../views/profile/coupon/coupon_details_page.dart';
+import '../../views/profile/coupon/coupon_page.dart';
+import '../../views/profile/notification_page.dart';
+import '../../views/profile/order/my_order_page.dart';
+import '../../views/profile/order/order_details.dart';
+import '../../views/profile/profile_edit_page.dart';
+import '../../views/profile/settings/change_password_page.dart';
+import '../../views/profile/settings/change_phone_number_page.dart';
+import '../../views/profile/settings/language_settings_page.dart';
+import '../../views/profile/settings/notifications_settings_page.dart';
+import '../../views/profile/settings/settings_page.dart';
 import '../../views/save/save_page.dart';
 import 'app_routes.dart';
 import 'unknown_page.dart';
@@ -102,6 +115,47 @@ class RouteGenerator {
 
       case AppRoutes.orderFailed:
         return CupertinoPageRoute(builder: (_) => const OrderFailedPage());
+
+      case AppRoutes.myOrder:
+        return CupertinoPageRoute(builder: (_) => const AllOrderPage());
+
+      case AppRoutes.orderDetails:
+        return CupertinoPageRoute(builder: (_) => const OrderDetailsPage());
+
+      case AppRoutes.coupon:
+        return CupertinoPageRoute(builder: (_) => const CouponAndOffersPage());
+
+      case AppRoutes.couponDetails:
+        return CupertinoPageRoute(builder: (_) => const CouponDetailsPage());
+
+      case AppRoutes.profileEdit:
+        return CupertinoPageRoute(builder: (_) => const ProfileEditPage());
+
+      case AppRoutes.newAddress:
+        return CupertinoPageRoute(builder: (_) => const NewAddressPage());
+
+      case AppRoutes.deliveryAddress:
+        return CupertinoPageRoute(builder: (_) => const AddressPage());
+
+      case AppRoutes.notifications:
+        return CupertinoPageRoute(builder: (_) => const NotificationPage());
+
+      case AppRoutes.settingsNotifications:
+        return CupertinoPageRoute(
+            builder: (_) => const NotificationSettingsPage());
+
+      case AppRoutes.settings:
+        return CupertinoPageRoute(builder: (_) => const SettingsPage());
+
+      case AppRoutes.settingsLanguage:
+        return CupertinoPageRoute(builder: (_) => const LanguageSettingsPage());
+
+      case AppRoutes.changePassword:
+        return CupertinoPageRoute(builder: (_) => const ChangePasswordPage());
+
+      case AppRoutes.changePhoneNumber:
+        return CupertinoPageRoute(
+            builder: (_) => const ChangePhoneNumberPage());
 
       default:
     }
