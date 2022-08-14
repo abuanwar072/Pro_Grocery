@@ -19,4 +19,12 @@ class AppImages {
   /* <---- Other Illustrations -----> */
   static const numberVerfication = 'https://i.imgur.com/tCCmY3I.png';
   static const verified = 'https://i.imgur.com/vF1jB6b.png';
+
+  /* <---- Coupon Backgrounds -----> */
+  static const couponBackgrounds = [
+    'assets/images/coupon_background_1.png',
+    'assets/images/coupon_background_2.png',
+    'assets/images/coupon_background_3.png',
+    'assets/images/coupon_background_4.png',
+  ];
 }
