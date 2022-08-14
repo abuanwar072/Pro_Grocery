@@ -9,119 +9,130 @@ class OrderPreviewTile extends StatelessWidget {
     required this.orderID,
     required this.date,
     required this.status,
+    required this.onTap,
   }) : super(key: key);
 
   final String orderID;
   final String date;
   final OrderStatus status;
+  final void Function() onTap;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(AppDefaults.padding),
-      margin: const EdgeInsets.symmetric(
+    return Padding(
+      padding: const EdgeInsets.symmetric(
         horizontal: AppDefaults.padding,
         vertical: AppDefaults.padding / 2,
       ),
-      decoration: BoxDecoration(
+      child: Material(
         color: Colors.white,
         borderRadius: AppDefaults.borderRadius,
-      ),
-      child: Column(
-        children: [
-          Row(
-            children: [
-              const Text('Order ID:'),
-              const SizedBox(width: 5),
-              Text(
-                '2324252627',
-                style: Theme.of(context)
-                    .textTheme
-                    .bodyLarge
-                    ?.copyWith(color: Colors.black),
-              ),
-              const Spacer(),
-              const Text('25 Nov'),
-            ],
-          ),
-          Row(
-            children: [
-              const Text('Status'),
-              Expanded(
-                child: RangeSlider(
-                  values: RangeValues(0, _orderRange()),
-                  max: 3,
-                  divisions: 3,
-                  onChanged: (v) {},
-                  activeColor: _orderColor(),
-                  inactiveColor: AppColors.placeholder.withOpacity(0.2),
-                ),
-              ),
-            ],
-          ),
-          Row(
-            children: [
-              const SizedBox(width: AppDefaults.padding * 2),
-              Expanded(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: AppDefaults.borderRadius,
+          child: Container(
+            padding: const EdgeInsets.all(AppDefaults.padding),
+            decoration: BoxDecoration(
+              borderRadius: AppDefaults.borderRadius,
+            ),
+            child: Column(
+              children: [
+                Row(
                   children: [
-                    Opacity(
-                      opacity: status == OrderStatus.confirmed ? 1 : 0,
-                      child: Text(
-                        'Confirmed',
-                        style: Theme.of(context)
-                            .textTheme
-                            .bodyLarge
-                            ?.copyWith(color: _orderColor()),
-                      ),
+                    const Text('Order ID:'),
+                    const SizedBox(width: 5),
+                    Text(
+                      '2324252627',
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyLarge
+                          ?.copyWith(color: Colors.black),
                     ),
-                    Opacity(
-                      opacity: status == OrderStatus.processing ? 1 : 0,
-                      child: Text(
-                        'Processing',
-                        style: Theme.of(context)
-                            .textTheme
-                            .bodyLarge
-                            ?.copyWith(color: _orderColor()),
-                      ),
-                    ),
-                    Opacity(
-                      opacity: status == OrderStatus.shipped ? 1 : 0,
-                      child: Text(
-                        'Shipped',
-                        style: Theme.of(context)
-                            .textTheme
-                            .bodyLarge
-                            ?.copyWith(color: _orderColor()),
-                      ),
-                    ),
-                    Opacity(
-                      opacity: status == OrderStatus.delivery ||
-                              status == OrderStatus.cancelled
-                          ? 1
-                          : 0,
-                      child: Text(
-                        status == OrderStatus.delivery
-                            ? 'Delivery'
-                            : 'Cancelled',
-                        style: Theme.of(context)
-                            .textTheme
-                            .bodyLarge
-                            ?.copyWith(color: _orderColor()),
+                    const Spacer(),
+                    const Text('25 Nov'),
+                  ],
+                ),
+                Row(
+                  children: [
+                    const Text('Status'),
+                    Expanded(
+                      child: RangeSlider(
+                        values: RangeValues(0, _orderSliderValue()),
+                        max: 3,
+                        divisions: 3,
+                        onChanged: (v) {},
+                        activeColor: _orderColor(),
+                        inactiveColor: AppColors.placeholder.withOpacity(0.2),
                       ),
                     ),
                   ],
                 ),
-              )
-            ],
-          )
-        ],
+                Row(
+                  children: [
+                    const SizedBox(width: AppDefaults.padding * 2),
+                    Expanded(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Opacity(
+                            opacity: status == OrderStatus.confirmed ? 1 : 0,
+                            child: Text(
+                              'Confirmed',
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .bodyLarge
+                                  ?.copyWith(color: _orderColor()),
+                            ),
+                          ),
+                          Opacity(
+                            opacity: status == OrderStatus.processing ? 1 : 0,
+                            child: Text(
+                              'Processing',
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .bodyLarge
+                                  ?.copyWith(color: _orderColor()),
+                            ),
+                          ),
+                          Opacity(
+                            opacity: status == OrderStatus.shipped ? 1 : 0,
+                            child: Text(
+                              'Shipped',
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .bodyLarge
+                                  ?.copyWith(color: _orderColor()),
+                            ),
+                          ),
+                          Opacity(
+                            opacity: status == OrderStatus.delivery ||
+                                    status == OrderStatus.cancelled
+                                ? 1
+                                : 0,
+                            child: Text(
+                              status == OrderStatus.delivery
+                                  ? 'Delivery'
+                                  : 'Cancelled',
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .bodyLarge
+                                  ?.copyWith(color: _orderColor()),
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                )
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
 
-  double _orderRange() {
+  double _orderSliderValue() {
     switch (status) {
       case OrderStatus.confirmed:
         return 0;

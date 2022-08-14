@@ -40,4 +40,9 @@ class AppIcons {
   static const profilePayment = 'assets/icons/profile_payment.svg';
   static const profileSetting = 'assets/icons/profile_setting.svg';
   static const profileLogout = 'assets/icons/profile_logout.svg';
+
+  static const orderConfirmed = 'assets/icons/order_confirm.svg';
+  static const orderDelivered = 'assets/icons/order_delivered.svg';
+  static const orderProcessing = 'assets/icons/order_processing.svg';
+  static const orderShipped = 'assets/icons/order_shipped.svg';
 }
