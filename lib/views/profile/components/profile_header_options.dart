@@ -39,7 +39,9 @@ class ProfileHeaderOptions extends StatelessWidget {
           ProfileSqureTile(
             label: 'Address',
             icon: AppIcons.homeProfile,
-            onTap: () {},
+            onTap: () {
+              Navigator.pushNamed(context, AppRoutes.deliveryAddress);
+            },
           ),
         ],
       ),

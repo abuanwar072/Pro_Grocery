@@ -14,6 +14,9 @@ class NewAddressPage extends StatelessWidget {
           'New Address',
         ),
       ),
+      body: Column(
+        children: const [],
+      ),
     );
   }
 }

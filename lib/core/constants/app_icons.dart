@@ -18,6 +18,8 @@ class AppIcons {
   static const save = 'assets/icons/save.svg';
   static const search = 'assets/icons/search.svg';
   static const shoppingBag = 'assets/icons/shopping_bag.svg';
+  static const edit = 'assets/icons/edit.svg';
+  static const deleteOutline = 'assets/icons/delete_outline.svg';
   static const twitterIcon = 'assets/icons/twitter_icon.svg';
   static const sidebarIcon = 'assets/icons/side_bar_icon.svg';
   static const heart = 'assets/icons/heart.svg';

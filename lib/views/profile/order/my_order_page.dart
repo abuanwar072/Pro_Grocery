@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery/core/constants/app_colors.dart';
 
 import '../../../core/components/app_back_button.dart';
 import 'components/tab_all.dart';
@@ -27,7 +28,7 @@ class AllOrderPage extends StatelessWidget {
           ),
         ),
         body: Container(
-          color: const Color(0xFFF2F2F2),
+          color: AppColors.cardColor,
           child: const TabBarView(
             children: [
               AllTab(),

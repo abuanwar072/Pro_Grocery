@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:grocery/core/constants/app_colors.dart';
 
-import '../../../core/constants/app_defaults.dart';
+import 'package:grocery/core/constants/app_defaults.dart';
 
 import '../../../core/components/app_back_button.dart';
 import 'components/order_details_statuses.dart';
@@ -13,7 +14,7 @@ class OrderDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF2F2F2),
+      backgroundColor: AppColors.cardColor,
       appBar: AppBar(
         leading: const AppBackButton(),
         title: const Text('Order Details'),
