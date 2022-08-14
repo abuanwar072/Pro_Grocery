@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../core/components/network_image.dart';
 import '../../core/constants/app_defaults.dart';
 

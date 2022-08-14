@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import '../models/dummy_product_model.dart';
 
 import '../constants/constants.dart';
+import '../models/dummy_product_model.dart';
 import '../routes/app_routes.dart';
 import 'network_image.dart';
 

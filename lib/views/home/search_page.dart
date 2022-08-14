@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:grocery/core/routes/app_routes.dart';
-import 'package:grocery/core/utils/ui_util.dart';
-import 'package:grocery/views/home/dialogs/product_filters_dialog.dart';
+import '../../core/routes/app_routes.dart';
+import '../../core/utils/ui_util.dart';
+import 'dialogs/product_filters_dialog.dart';
 import '../../core/components/app_back_button.dart';
 import '../../core/constants/app_colors.dart';
 import '../../core/constants/app_defaults.dart';

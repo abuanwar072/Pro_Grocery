@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grocery/core/components/app_back_button.dart';
+import '../../../core/components/app_back_button.dart';
 
 class CouponAndOffersPage extends StatelessWidget {
   const CouponAndOffersPage({Key? key}) : super(key: key);

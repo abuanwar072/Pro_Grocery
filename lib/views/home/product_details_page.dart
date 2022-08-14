@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import '../../core/components/product_images_slider.dart';
-import '../../core/components/review_row_button.dart';
-import '../../core/constants/app_defaults.dart';
 
 import '../../core/components/app_back_button.dart';
 import '../../core/components/buy_now_row_button.dart';
 import '../../core/components/price_and_quantity.dart';
+import '../../core/components/product_images_slider.dart';
+import '../../core/components/review_row_button.dart';
+import '../../core/constants/app_defaults.dart';
 
 class ProductDetailsPage extends StatelessWidget {
   const ProductDetailsPage({Key? key}) : super(key: key);
