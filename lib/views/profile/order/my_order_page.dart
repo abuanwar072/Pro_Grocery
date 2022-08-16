@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grocery/core/constants/app_colors.dart';
+import '../../../core/constants/app_colors.dart';
 
 import '../../../core/components/app_back_button.dart';
 import 'components/tab_all.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:grocery/core/constants/app_colors.dart';
+import '../../../core/constants/app_colors.dart';
 
-import 'package:grocery/core/constants/app_defaults.dart';
+import '../../../core/constants/app_defaults.dart';
 
 import '../../../core/components/app_back_button.dart';
 import 'components/order_details_statuses.dart';

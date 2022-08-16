@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../core/routes/app_routes.dart';
 
 import '../../../core/constants/constants.dart';
 import 'profile_list_tile.dart';
@@ -23,31 +24,31 @@ class ProfileMenuOptions extends StatelessWidget {
           ProfileListTile(
             title: 'My Profile',
             icon: AppIcons.profilePerson,
-            onTap: () {},
+            onTap: () => Navigator.pushNamed(context, AppRoutes.profileEdit),
           ),
           const Divider(thickness: 0.1),
           ProfileListTile(
             title: 'Notification',
             icon: AppIcons.profileNotification,
-            onTap: () {},
+            onTap: () => Navigator.pushNamed(context, AppRoutes.notifications),
           ),
           const Divider(thickness: 0.1),
           ProfileListTile(
             title: 'Setting',
             icon: AppIcons.profileSetting,
-            onTap: () {},
+            onTap: () => Navigator.pushNamed(context, AppRoutes.settings),
           ),
           const Divider(thickness: 0.1),
           ProfileListTile(
             title: 'Payment',
             icon: AppIcons.profilePayment,
-            onTap: () {},
+            onTap: () => Navigator.pushNamed(context, AppRoutes.paymentMethod),
           ),
           const Divider(thickness: 0.1),
           ProfileListTile(
             title: 'Logout',
             icon: AppIcons.profileLogout,
-            onTap: () {},
+            onTap: () => Navigator.pushNamed(context, AppRoutes.loginOrSignup),
           ),
         ],
       ),

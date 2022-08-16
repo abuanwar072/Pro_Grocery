@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:grocery/core/constants/app_colors.dart';
-import 'package:grocery/core/constants/app_defaults.dart';
+import '../../../core/constants/app_colors.dart';
+import '../../../core/constants/app_defaults.dart';
 
 import '../../../core/components/app_back_button.dart';
-import '../../../core/routes/app_routes.dart';
 import 'components/coupon_card.dart';
 
 class CouponDetailsPage extends StatelessWidget {
