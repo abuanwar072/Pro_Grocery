@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../core/constants/app_colors.dart';
 import 'components/profile_header.dart';
 import 'components/profile_menu_options.dart';
 
@@ -9,7 +10,7 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xFFF2F2F2),
+      color: AppColors.cardColor,
       child: Column(
         children: const [
           ProfileHeader(),

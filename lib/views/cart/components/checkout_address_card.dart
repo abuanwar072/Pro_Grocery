@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/components/app_radio.dart';
 import '../../../core/constants/constants.dart';
 
 class AddressCard extends StatelessWidget {
@@ -45,26 +46,7 @@ class AddressCard extends StatelessWidget {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                        color: isActive
-                            ? AppColors.primary
-                            : AppColors.placeholder),
-                    shape: BoxShape.circle,
-                  ),
-                  child: Container(
-                    width: 12,
-                    height: 12,
-                    margin: const EdgeInsets.all(4),
-                    decoration: BoxDecoration(
-                      color: isActive
-                          ? AppColors.primary
-                          : AppColors.textInputBackground,
-                      shape: BoxShape.circle,
-                    ),
-                  ),
-                ),
+                AppRadio(isActive: isActive),
                 const SizedBox(width: 16),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,

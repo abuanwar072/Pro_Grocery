@@ -62,6 +62,26 @@ class AppTheme {
         showValueIndicator: ShowValueIndicator.always,
         thumbColor: Colors.white,
       ),
+      tabBarTheme: const TabBarTheme(
+        labelColor: AppColors.primary,
+        unselectedLabelColor: AppColors.placeholder,
+        labelPadding: EdgeInsets.all(AppDefaults.padding),
+        indicatorSize: TabBarIndicatorSize.label,
+        labelStyle: TextStyle(
+          fontWeight: FontWeight.bold,
+          color: AppColors.primary,
+        ),
+        unselectedLabelStyle: TextStyle(
+          fontWeight: FontWeight.bold,
+          color: AppColors.placeholder,
+        ),
+        indicator: UnderlineTabIndicator(
+          borderSide: BorderSide(
+            color: AppColors.primary,
+            width: 2,
+          ),
+        ),
+      ),
     );
   }
 

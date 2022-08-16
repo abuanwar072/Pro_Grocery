@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../core/utils/ui_util.dart';
+import '../cart/dialogs/delivered_successfull.dart';
 
 import '../../core/components/network_image.dart';
 import '../../core/constants/app_defaults.dart';
@@ -59,7 +61,12 @@ class OrderSuccessfullPage extends StatelessWidget {
                   child: SizedBox(
                     width: double.infinity,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        UiUtil.openDialog(
+                          context: context,
+                          widget: const DeliverySuccessfullDialog(),
+                        );
+                      },
                       child: const Text('Continue'),
                     ),
                   ),

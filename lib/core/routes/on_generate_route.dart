@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import '../../views/review/review_page.dart';
+import '../../views/review/submit_review_page.dart';
 
 import '../../views/auth/forget_password_page.dart';
 import '../../views/auth/intro_login_page.dart';
@@ -157,9 +159,15 @@ class RouteGenerator {
         return CupertinoPageRoute(
             builder: (_) => const ChangePhoneNumberPage());
 
+      case AppRoutes.review:
+        return CupertinoPageRoute(builder: (_) => const ReviewPage());
+
+      case AppRoutes.submitReview:
+        return CupertinoPageRoute(builder: (_) => const SubmitReviewPage());
+
       default:
+        return errorRoute();
     }
-    return null;
   }
 
   static Route? errorRoute() =>

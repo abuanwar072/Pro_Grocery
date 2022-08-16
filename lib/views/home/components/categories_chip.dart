@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:grocery/core/constants/app_colors.dart';
+
+import '../../../core/constants/app_colors.dart';
 
 class CategoriesChip extends StatelessWidget {
   const CategoriesChip({

@@ -58,7 +58,7 @@ class AppRoutes {
 
   /* <---- Review and Comments -----> */
   static const review = '/review';
-  static const comments = '/comments';
+  static const submitReview = '/submitReview';
   // Not Needed
   // static const errorPage = '/errorPage';
 
