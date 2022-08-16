@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../core/constants/app_defaults.dart';
+import '../constants/app_defaults.dart';
 
 class AppSettingsListTile extends StatelessWidget {
   const AppSettingsListTile({

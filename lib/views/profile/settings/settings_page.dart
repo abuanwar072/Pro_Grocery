@@ -4,7 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import '../../../core/components/app_back_button.dart';
 import '../../../core/constants/constants.dart';
 import '../../../core/routes/app_routes.dart';
-import '../components/app_settings_tile.dart';
+import '../../../core/components/app_settings_tile.dart';
 
 class SettingsPage extends StatelessWidget {
   const SettingsPage({Key? key}) : super(key: key);

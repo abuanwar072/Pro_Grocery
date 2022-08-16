@@ -1,6 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import '../../views/review/review_page.dart';
-import '../../views/review/submit_review_page.dart';
 
 import '../../views/auth/forget_password_page.dart';
 import '../../views/auth/intro_login_page.dart';
@@ -11,6 +9,12 @@ import '../../views/auth/password_reset_page.dart';
 import '../../views/auth/sign_up_page.dart';
 import '../../views/cart/cart_page.dart';
 import '../../views/cart/checkout_page.dart';
+import '../../views/drawer/about_us_page.dart';
+import '../../views/drawer/contact_us_page.dart';
+import '../../views/drawer/drawer_page.dart';
+import '../../views/drawer/faq_page.dart';
+import '../../views/drawer/help_page.dart';
+import '../../views/drawer/terms_and_conditions_page.dart';
 import '../../views/entrypoint/entrypoint_ui.dart';
 import '../../views/home/bundle_create_page.dart';
 import '../../views/home/bundle_details_page.dart';
@@ -31,12 +35,16 @@ import '../../views/profile/coupon/coupon_page.dart';
 import '../../views/profile/notification_page.dart';
 import '../../views/profile/order/my_order_page.dart';
 import '../../views/profile/order/order_details.dart';
+import '../../views/profile/payment_method/add_new_card_page.dart';
+import '../../views/profile/payment_method/payment_method_page.dart';
 import '../../views/profile/profile_edit_page.dart';
 import '../../views/profile/settings/change_password_page.dart';
 import '../../views/profile/settings/change_phone_number_page.dart';
 import '../../views/profile/settings/language_settings_page.dart';
 import '../../views/profile/settings/notifications_settings_page.dart';
 import '../../views/profile/settings/settings_page.dart';
+import '../../views/review/review_page.dart';
+import '../../views/review/submit_review_page.dart';
 import '../../views/save/save_page.dart';
 import 'app_routes.dart';
 import 'unknown_page.dart';
@@ -164,6 +172,31 @@ class RouteGenerator {
 
       case AppRoutes.submitReview:
         return CupertinoPageRoute(builder: (_) => const SubmitReviewPage());
+
+      case AppRoutes.drawerPage:
+        return CupertinoPageRoute(builder: (_) => const DrawerPage());
+
+      case AppRoutes.aboutUs:
+        return CupertinoPageRoute(builder: (_) => const AboutUsPage());
+
+      case AppRoutes.termsAndConditions:
+        return CupertinoPageRoute(
+            builder: (_) => const TermsAndConditionsPage());
+
+      case AppRoutes.faq:
+        return CupertinoPageRoute(builder: (_) => const FAQPage());
+
+      case AppRoutes.help:
+        return CupertinoPageRoute(builder: (_) => const HelpPage());
+
+      case AppRoutes.contactUs:
+        return CupertinoPageRoute(builder: (_) => const ContactUsPage());
+
+      case AppRoutes.paymentMethod:
+        return CupertinoPageRoute(builder: (_) => const PaymentMethodPage());
+
+      case AppRoutes.paymentCardAdd:
+        return CupertinoPageRoute(builder: (_) => const AddNewCardPage());
 
       default:
         return errorRoute();

@@ -56,7 +56,7 @@ class _SideBarButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      onPressed: () {},
+      onPressed: () => Navigator.pushNamed(context, AppRoutes.drawerPage),
       icon: Container(
         padding: const EdgeInsets.all(8),
         decoration: const BoxDecoration(

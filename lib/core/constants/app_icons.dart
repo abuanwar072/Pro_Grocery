@@ -50,4 +50,8 @@ class AppIcons {
   static const orderDelivered = 'assets/icons/order_delivered.svg';
   static const orderProcessing = 'assets/icons/order_processing.svg';
   static const orderShipped = 'assets/icons/order_shipped.svg';
+
+  static const contactPhone = 'assets/icons/contact_phone.svg';
+  static const contactEmail = 'assets/icons/contact_email.svg';
+  static const contactMap = 'assets/icons/contact_map.svg';
 }
