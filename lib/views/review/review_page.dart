@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:grocery/core/components/app_back_button.dart';
+
+import '../../core/components/app_back_button.dart';
+import 'components/review_lists.dart';
+import 'components/review_overview.dart';
 
 class ReviewPage extends StatelessWidget {
   const ReviewPage({Key? key}) : super(key: key);
@@ -12,6 +13,13 @@ class ReviewPage extends StatelessWidget {
       appBar: AppBar(
         leading: const AppBackButton(),
         title: const Text('Review'),
+      ),
+      body: Column(
+        children: const [
+          ReviewOverview(),
+          Divider(thickness: 0.1),
+          ReviewLists(),
+        ],
       ),
     );
   }

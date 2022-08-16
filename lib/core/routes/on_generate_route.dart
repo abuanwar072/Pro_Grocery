@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:grocery/views/review/review_page.dart';
-import 'package:grocery/views/review/submit_review_page.dart';
+import '../../views/review/review_page.dart';
+import '../../views/review/submit_review_page.dart';
 
 import '../../views/auth/forget_password_page.dart';
 import '../../views/auth/intro_login_page.dart';

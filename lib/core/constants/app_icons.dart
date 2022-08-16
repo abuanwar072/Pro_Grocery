@@ -23,6 +23,8 @@ class AppIcons {
   static const twitterIcon = 'assets/icons/twitter_icon.svg';
   static const sidebarIcon = 'assets/icons/side_bar_icon.svg';
   static const heart = 'assets/icons/heart.svg';
+  static const heartActive = 'assets/icons/heart_active.svg';
+  static const heartOutlined = 'assets/icons/heart_outlined.svg';
   static const addQuantity = 'assets/icons/add_quantity.svg';
   static const removeQuantity = 'assets/icons/remove_quantity.svg';
   static const shoppingCart = 'assets/icons/shopping_cart.svg';
@@ -35,6 +37,7 @@ class AppIcons {
   static const homeProfile = 'assets/icons/home_profile.svg';
   static const truckIcon = 'assets/icons/truck_icon.svg';
   static const voucher = 'assets/icons/voucher.svg';
+  static const reply = 'assets/icons/reply.svg';
 
   static const right = 'assets/icons/right.svg';
   static const profilePerson = 'assets/icons/profile_person.svg';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../core/constants/app_colors.dart';
 
+import '../../core/constants/app_colors.dart';
 import 'components/profile_header.dart';
 import 'components/profile_menu_options.dart';
 
