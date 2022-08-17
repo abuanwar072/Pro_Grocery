@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+
 import '../../core/components/app_back_button.dart';
 import '../../core/constants/app_defaults.dart';
-
 import '../../core/routes/app_routes.dart';
 import 'components/coupon_code_field.dart';
 import 'components/items_totals_price.dart';

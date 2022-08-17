@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../constants/app_defaults.dart';
 
 class AppSettingsListTile extends StatelessWidget {

@@ -19,7 +19,7 @@ class NewItemsPage extends StatelessWidget {
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           mainAxisSpacing: 16,
-          childAspectRatio: 0.9,
+          childAspectRatio: 0.85,
         ),
         itemCount: 16,
         itemBuilder: (context, index) {

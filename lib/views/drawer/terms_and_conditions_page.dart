@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../core/components/app_back_button.dart';
 import 'components/faq_item.dart';
 

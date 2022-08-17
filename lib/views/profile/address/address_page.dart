@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../core/components/app_radio.dart';
-
 import '../../../core/components/app_back_button.dart';
+import '../../../core/components/app_radio.dart';
 import '../../../core/constants/constants.dart';
 import '../../../core/routes/app_routes.dart';
 

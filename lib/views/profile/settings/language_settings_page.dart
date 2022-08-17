@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../core/components/app_back_button.dart';
+import '../../../core/components/app_settings_tile.dart';
 import '../../../core/constants/constants.dart';
 import '../../../core/themes/app_themes.dart';
-import '../../../core/components/app_settings_tile.dart';
 
 class LanguageSettingsPage extends StatelessWidget {
   const LanguageSettingsPage({Key? key}) : super(key: key);

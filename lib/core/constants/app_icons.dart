@@ -54,4 +54,6 @@ class AppIcons {
   static const contactPhone = 'assets/icons/contact_phone.svg';
   static const contactEmail = 'assets/icons/contact_email.svg';
   static const contactMap = 'assets/icons/contact_map.svg';
+
+  static const cardAdd = 'assets/icons/card_add.svg';
 }
