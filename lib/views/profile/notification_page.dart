@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../core/components/app_back_button.dart';
 import '../../core/components/network_image.dart';
 import '../../core/constants/app_defaults.dart';
-
-import '../../core/components/app_back_button.dart';
 
 class NotificationPage extends StatelessWidget {
   const NotificationPage({Key? key}) : super(key: key);

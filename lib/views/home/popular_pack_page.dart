@@ -23,7 +23,7 @@ class PopularPackPage extends StatelessWidget {
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               mainAxisSpacing: 16,
-              childAspectRatio: 1,
+              childAspectRatio: 0.9,
             ),
             itemCount: 16,
             itemBuilder: (context, index) {

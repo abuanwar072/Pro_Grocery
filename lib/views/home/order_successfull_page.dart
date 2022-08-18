@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../../core/utils/ui_util.dart';
-import '../cart/dialogs/delivered_successfull.dart';
 
 import '../../core/components/network_image.dart';
 import '../../core/constants/app_defaults.dart';
+import '../../core/utils/ui_util.dart';
+import '../cart/dialogs/delivered_successfull.dart';
 
 class OrderSuccessfullPage extends StatelessWidget {
   const OrderSuccessfullPage({Key? key}) : super(key: key);

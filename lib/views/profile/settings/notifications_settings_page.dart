@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/components/app_back_button.dart';
+import '../../../core/components/app_settings_tile.dart';
 import '../../../core/constants/constants.dart';
-import '../components/app_settings_tile.dart';
 
 class NotificationSettingsPage extends StatelessWidget {
   const NotificationSettingsPage({Key? key}) : super(key: key);
