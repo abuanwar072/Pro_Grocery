@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery/core/routes/app_routes.dart';
 
 import '../../core/components/app_back_button.dart';
 import '../../core/constants/constants.dart';
@@ -57,7 +58,9 @@ class PasswordResetPage extends StatelessWidget {
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, AppRoutes.login);
+                        },
                         child: const Text('Done'),
                       ),
                     ),
