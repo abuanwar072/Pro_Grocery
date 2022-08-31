@@ -355,9 +355,24 @@ class _FilterHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        IconButton(
-          onPressed: () => Navigator.pop(context),
-          icon: const Icon(Icons.close),
+        Container(
+          width: 56,
+          alignment: Alignment.centerLeft,
+          child: SizedBox(
+            height: 40,
+            width: 40,
+            child: ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.zero,
+                primary: AppColors.scaffoldWithBoxBackground,
+              ),
+              child: const Icon(
+                Icons.close,
+                color: Colors.black,
+              ),
+            ),
+          ),
         ),
         Text(
           'Filter',
@@ -366,13 +381,16 @@ class _FilterHeader extends StatelessWidget {
                 color: Colors.black,
               ),
         ),
-        TextButton(
-          onPressed: () {},
-          child: Text(
-            'Reset',
-            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                  color: Colors.black,
-                ),
+        SizedBox(
+          width: 56,
+          child: TextButton(
+            onPressed: () {},
+            child: Text(
+              'Reset',
+              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                    color: Colors.black,
+                  ),
+            ),
           ),
         )
       ],
