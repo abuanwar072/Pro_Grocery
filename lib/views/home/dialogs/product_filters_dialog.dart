@@ -8,43 +8,45 @@ class ProductFiltersDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(AppDefaults.padding),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Container(
-            width: 56,
-            height: 3,
-            decoration: BoxDecoration(
-              color: Colors.black,
-              borderRadius: AppDefaults.borderRadius,
+    return SafeArea(
+      child: SingleChildScrollView(
+        padding: const EdgeInsets.all(AppDefaults.padding),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              width: 56,
+              height: 3,
+              decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: AppDefaults.borderRadius,
+              ),
+              margin: const EdgeInsets.all(8),
             ),
-            margin: const EdgeInsets.all(8),
-          ),
-          const _FilterHeader(),
-          const _SortBy(),
-          const _PriceRange(),
-          const _CategoriesSelector(),
-          const _BrandSelector(),
-          _RatingStar(
-            totalStarsSelected: 2,
-            onStarSelect: (v) {
-              debugPrint('Star selected $v');
-            },
-          ),
-          SizedBox(
-            width: double.infinity,
-            child: Padding(
-              padding: const EdgeInsets.all(AppDefaults.padding),
-              child: ElevatedButton(
-                onPressed: () {},
-                child: const Text('Apply Filter'),
+            const _FilterHeader(),
+            const _SortBy(),
+            const _PriceRange(),
+            const _CategoriesSelector(),
+            const _BrandSelector(),
+            _RatingStar(
+              totalStarsSelected: 4,
+              onStarSelect: (v) {
+                debugPrint('Star selected $v');
+              },
+            ),
+            SizedBox(
+              width: double.infinity,
+              child: Padding(
+                padding: const EdgeInsets.all(AppDefaults.padding),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: const Text('Apply Filter'),
+                ),
               ),
             ),
-          ),
-          const SizedBox(height: 16),
-        ],
+            const SizedBox(height: 16),
+          ],
+        ),
       ),
     );
   }
@@ -132,37 +134,40 @@ class _BrandSelector extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
-          Wrap(
-            alignment: WrapAlignment.start,
-            spacing: 16,
-            runSpacing: 16,
-            children: [
-              CategoriesChip(
-                isActive: true,
-                label: 'Any',
-                onPressed: () {},
-              ),
-              CategoriesChip(
-                isActive: false,
-                label: 'Square',
-                onPressed: () {},
-              ),
-              CategoriesChip(
-                isActive: false,
-                label: 'Beximco Pharma',
-                onPressed: () {},
-              ),
-              CategoriesChip(
-                isActive: false,
-                label: 'ACI Limited',
-                onPressed: () {},
-              ),
-              CategoriesChip(
-                isActive: false,
-                label: 'See All',
-                onPressed: () {},
-              ),
-            ],
+          SizedBox(
+            width: double.infinity,
+            child: Wrap(
+              alignment: WrapAlignment.start,
+              spacing: 16,
+              runSpacing: 16,
+              children: [
+                CategoriesChip(
+                  isActive: true,
+                  label: 'Any',
+                  onPressed: () {},
+                ),
+                CategoriesChip(
+                  isActive: false,
+                  label: 'Square',
+                  onPressed: () {},
+                ),
+                CategoriesChip(
+                  isActive: false,
+                  label: 'Beximco Pharma',
+                  onPressed: () {},
+                ),
+                CategoriesChip(
+                  isActive: false,
+                  label: 'ACI Limited',
+                  onPressed: () {},
+                ),
+                CategoriesChip(
+                  isActive: false,
+                  label: 'See All',
+                  onPressed: () {},
+                ),
+              ],
+            ),
           )
         ],
       ),
@@ -192,37 +197,42 @@ class _CategoriesSelector extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
-          Wrap(
-            alignment: WrapAlignment.start,
-            spacing: 16,
-            runSpacing: 16,
-            children: [
-              CategoriesChip(
-                isActive: true,
-                label: 'Office Supplies',
-                onPressed: () {},
-              ),
-              CategoriesChip(
-                isActive: false,
-                label: 'Gardening',
-                onPressed: () {},
-              ),
-              CategoriesChip(
-                isActive: false,
-                label: 'Vegetables',
-                onPressed: () {},
-              ),
-              CategoriesChip(
-                isActive: false,
-                label: 'Fish And Meat',
-                onPressed: () {},
-              ),
-              CategoriesChip(
-                isActive: false,
-                label: 'See All',
-                onPressed: () {},
-              ),
-            ],
+          SizedBox(
+            width: double.infinity,
+            child: Wrap(
+              alignment: WrapAlignment.start,
+              runAlignment: WrapAlignment.spaceAround,
+              crossAxisAlignment: WrapCrossAlignment.start,
+              spacing: 16,
+              runSpacing: 16,
+              children: [
+                CategoriesChip(
+                  isActive: true,
+                  label: 'Office Supplies',
+                  onPressed: () {},
+                ),
+                CategoriesChip(
+                  isActive: false,
+                  label: 'Gardening',
+                  onPressed: () {},
+                ),
+                CategoriesChip(
+                  isActive: false,
+                  label: 'Vegetables',
+                  onPressed: () {},
+                ),
+                CategoriesChip(
+                  isActive: false,
+                  label: 'Fish And Meat',
+                  onPressed: () {},
+                ),
+                CategoriesChip(
+                  isActive: false,
+                  label: 'See All',
+                  onPressed: () {},
+                ),
+              ],
+            ),
           )
         ],
       ),
@@ -258,8 +268,6 @@ class _PriceRangeState extends State<_PriceRange> {
                   ),
             ),
           ),
-
-          /// TODO : ADD RANGE SHOW HERE
           RangeSlider(
             max: 100,
             min: 0,
@@ -273,6 +281,7 @@ class _PriceRangeState extends State<_PriceRange> {
               });
             },
             activeColor: AppColors.primary,
+            inactiveColor: AppColors.gray,
             values: _currentRangeValues,
           ),
           Padding(

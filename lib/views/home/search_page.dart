@@ -86,41 +86,48 @@ class _SearchPageHeader extends StatelessWidget {
             child: Stack(
               children: [
                 /// Search Box
-                TextField(
-                  decoration: InputDecoration(
-                    labelText: 'Search',
-                    prefixIcon: Padding(
-                      padding: const EdgeInsets.all(AppDefaults.padding),
-                      child: SvgPicture.asset(
-                        AppIcons.search,
-                        color: AppColors.primary,
+                Form(
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      hintText: 'Search',
+                      prefixIcon: Padding(
+                        padding: const EdgeInsets.all(AppDefaults.padding),
+                        child: SvgPicture.asset(
+                          AppIcons.search,
+                          color: AppColors.primary,
+                        ),
                       ),
+                      prefixIconConstraints: const BoxConstraints(),
+                      contentPadding: EdgeInsets.zero,
+                      constraints: const BoxConstraints(),
                     ),
-                    prefixIconConstraints: const BoxConstraints(),
-                    contentPadding: EdgeInsets.zero,
-                    constraints: const BoxConstraints(),
+                    textInputAction: TextInputAction.search,
+                    autofocus: true,
+                    onChanged: (String? value) {},
+                    onFieldSubmitted: (v) {
+                      Navigator.pushNamed(context, AppRoutes.searchResult);
+                    },
                   ),
-                  textInputAction: TextInputAction.search,
-                  autofocus: true,
-                  onSubmitted: (v) {
-                    Navigator.pushNamed(context, AppRoutes.searchResult);
-                  },
                 ),
                 Positioned(
                   right: 0,
-                  child: ElevatedButton(
-                    onPressed: () {
-                      UiUtil.openBottomSheet(
-                        context: context,
-                        widget: const ProductFiltersDialog(),
-                      );
-                    },
-                    style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8),
+                  height: 56,
+                  child: SizedBox(
+                    width: 56,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        UiUtil.openBottomSheet(
+                          context: context,
+                          widget: const ProductFiltersDialog(),
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8),
+                        ),
                       ),
+                      child: SvgPicture.asset(AppIcons.filter),
                     ),
-                    child: SvgPicture.asset(AppIcons.filter),
                   ),
                 )
               ],
