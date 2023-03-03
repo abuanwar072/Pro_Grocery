@@ -31,7 +31,7 @@ class OrderFailedPage extends StatelessWidget {
               children: [
                 Text(
                   'Sorry, Order has Failed',
-                  style: Theme.of(context).textTheme.headline6?.copyWith(
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),

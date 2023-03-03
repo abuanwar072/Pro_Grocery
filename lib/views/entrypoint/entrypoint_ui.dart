@@ -23,7 +23,7 @@ class _EntryPointUIState extends State<EntryPointUI> {
   /// Current Page
   int currentIndex = 0;
 
-  /// On button navigation tap
+  /// On labelLarge navigation tap
   void onBottomNavigationTap(int index) {
     currentIndex = index;
     setState(() {});

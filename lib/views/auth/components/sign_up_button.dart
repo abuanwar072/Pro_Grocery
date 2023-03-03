@@ -17,7 +17,7 @@ class SignUpButton extends StatelessWidget {
         children: [
           Text(
             'Sign Up',
-            style: Theme.of(context).textTheme.headline6?.copyWith(
+            style: Theme.of(context).textTheme.titleLarge?.copyWith(
                   fontWeight: FontWeight.bold,
                 ),
           ),

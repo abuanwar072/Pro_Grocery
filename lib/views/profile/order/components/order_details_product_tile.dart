@@ -47,7 +47,7 @@ class OrderDetailsProductTile extends StatelessWidget {
           children: [
             Text(
               '\$${data.price.toInt()}',
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(height: 8),
             Text(

@@ -33,7 +33,7 @@ class ContactUsPage extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Text(
                 'Contact Us',
-                style: Theme.of(context).textTheme.headline6?.copyWith(
+                style: Theme.of(context).textTheme.titleLarge?.copyWith(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
                     ),

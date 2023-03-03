@@ -38,7 +38,7 @@ class BottomActionBar extends StatelessWidget {
           const Spacer(),
           Text(
             '\$35.05',
-            style: Theme.of(context).textTheme.headline6?.copyWith(
+            style: Theme.of(context).textTheme.titleLarge?.copyWith(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),

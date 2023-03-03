@@ -85,7 +85,7 @@ class SingleCartItemTile extends StatelessWidget {
               ),
               const Spacer(),
 
-              /// Price and Delete Button
+              /// Price and Delete labelLarge
               Column(
                 children: [
                   IconButton(

@@ -24,7 +24,7 @@ class TitleAndParagraph extends StatelessWidget {
           Text(
             title,
             style: isTitleHeadline
-                ? Theme.of(context).textTheme.headline6?.copyWith(
+                ? Theme.of(context).textTheme.titleLarge?.copyWith(
                       fontWeight: FontWeight.bold,
                     )
                 : Theme.of(context).textTheme.bodyLarge?.copyWith(

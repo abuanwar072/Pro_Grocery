@@ -72,7 +72,7 @@ class CouponCard extends StatelessWidget {
                               'Off',
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline6
+                                  .titleLarge
                                   ?.copyWith(color: Colors.white),
                             ),
                           ],
@@ -90,11 +90,13 @@ class CouponCard extends StatelessWidget {
                         padding: const EdgeInsets.all(AppDefaults.padding),
                         child: Text(
                           title,
-                          style:
-                              Theme.of(context).textTheme.headline5?.copyWith(
-                                    color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                  ),
+                          style: Theme.of(context)
+                              .textTheme
+                              .headlineSmall
+                              ?.copyWith(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                              ),
                           maxLines: 2,
                         ),
                       ),

@@ -57,7 +57,7 @@ class ProductTileSquare extends StatelessWidget {
                       data.name,
                       style: Theme.of(context)
                           .textTheme
-                          .headline6
+                          .titleLarge
                           ?.copyWith(color: Colors.black),
                     ),
                     Text(
@@ -74,7 +74,7 @@ class ProductTileSquare extends StatelessWidget {
                       '\$${data.price.toInt()}',
                       style: Theme.of(context)
                           .textTheme
-                          .headline6
+                          .titleLarge
                           ?.copyWith(color: Colors.black),
                     ),
                     const SizedBox(

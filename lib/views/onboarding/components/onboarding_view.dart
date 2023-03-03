@@ -36,7 +36,7 @@ class OnboardingView extends StatelessWidget {
                 data.headline,
                 style: Theme.of(context)
                     .textTheme
-                    .headline6
+                    .titleLarge
                     ?.copyWith(fontWeight: FontWeight.bold),
               ),
               Padding(

@@ -38,9 +38,10 @@ class BundleProductDetailsPage extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Text(
                       'Bundle Pack',
-                      style: Theme.of(context).textTheme.headline5?.copyWith(
-                            fontWeight: FontWeight.bold,
-                          ),
+                      style:
+                          Theme.of(context).textTheme.headlineSmall?.copyWith(
+                                fontWeight: FontWeight.bold,
+                              ),
                     ),
                   ),
                   const PriceAndQuantityRow(

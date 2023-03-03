@@ -62,7 +62,7 @@ class _PriceAndQuantityRowState extends State<PriceAndQuantityRow> {
           '\$20',
           style: Theme.of(context)
               .textTheme
-              .headline5
+              .headlineSmall
               ?.copyWith(color: AppColors.primary, fontWeight: FontWeight.bold),
         ),
         const Spacer(),

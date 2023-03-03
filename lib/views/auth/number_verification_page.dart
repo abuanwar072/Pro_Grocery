@@ -108,7 +108,7 @@ class NumberVerificationHeader extends StatelessWidget {
         const SizedBox(height: AppDefaults.padding),
         Text(
           'Entry Your 4 digit code',
-          style: Theme.of(context).textTheme.headline6,
+          style: Theme.of(context).textTheme.titleLarge,
         ),
         const SizedBox(height: AppDefaults.padding),
         SizedBox(
@@ -152,7 +152,7 @@ class OTPTextFields extends StatelessWidget {
                 }
               },
               textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.headline6?.copyWith(
+              style: Theme.of(context).textTheme.titleLarge?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
               inputFormatters: [
@@ -174,7 +174,7 @@ class OTPTextFields extends StatelessWidget {
                 }
               },
               textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.headline6?.copyWith(
+              style: Theme.of(context).textTheme.titleLarge?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
               inputFormatters: [
@@ -196,7 +196,7 @@ class OTPTextFields extends StatelessWidget {
                 }
               },
               textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.headline6?.copyWith(
+              style: Theme.of(context).textTheme.titleLarge?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
               inputFormatters: [
@@ -218,7 +218,7 @@ class OTPTextFields extends StatelessWidget {
                 }
               },
               textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.headline6?.copyWith(
+              style: Theme.of(context).textTheme.titleLarge?.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
               inputFormatters: [

@@ -30,7 +30,7 @@ class OrderEmpty extends StatelessWidget {
             children: [
               Text(
                 'No Orders Yet',
-                style: Theme.of(context).textTheme.headline6?.copyWith(
+                style: Theme.of(context).textTheme.titleLarge?.copyWith(
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
                     ),

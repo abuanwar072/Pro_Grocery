@@ -48,7 +48,7 @@ class _Footer extends StatelessWidget {
           'OR',
           style: Theme.of(context)
               .textTheme
-              .headline6
+              .titleLarge
               ?.copyWith(fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: AppDefaults.margin),
@@ -102,12 +102,12 @@ class _AppLogoAndHeadline extends StatelessWidget {
           'Welcome to our',
           style: Theme.of(context)
               .textTheme
-              .headline5
+              .headlineSmall
               ?.copyWith(fontWeight: FontWeight.bold),
         ),
         Text(
           'E-Grocery',
-          style: Theme.of(context).textTheme.headline5?.copyWith(
+          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.bold,
                 color: AppColors.primary,
               ),

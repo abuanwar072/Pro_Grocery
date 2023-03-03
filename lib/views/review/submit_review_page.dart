@@ -43,7 +43,7 @@ class SubmitReviewPage extends StatelessWidget {
                 padding: const EdgeInsets.all(AppDefaults.padding),
                 child: Text(
                   'How would you rate the\nquality of this Products',
-                  style: Theme.of(context).textTheme.headline6?.copyWith(
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
                       ),
@@ -67,7 +67,7 @@ class SubmitReviewPage extends StatelessWidget {
                 alignment: Alignment.centerLeft,
                 child: Text(
                   'Leave a your valuable\ncomments',
-                  style: Theme.of(context).textTheme.headline6?.copyWith(
+                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
                         color: Colors.black,
                         fontWeight: FontWeight.bold,
                       ),

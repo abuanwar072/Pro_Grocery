@@ -29,7 +29,7 @@ class EmptyCartPageSecond extends StatelessWidget {
             'Oppss!',
             style: Theme.of(context)
                 .textTheme
-                .headline6
+                .titleLarge
                 ?.copyWith(fontWeight: FontWeight.bold, color: Colors.black),
           ),
           const SizedBox(height: 8),

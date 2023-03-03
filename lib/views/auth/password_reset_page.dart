@@ -38,7 +38,7 @@ class PasswordResetPage extends StatelessWidget {
                       'Add New password',
                       style: Theme.of(context)
                           .textTheme
-                          .headline6
+                          .titleLarge
                           ?.copyWith(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: AppDefaults.padding * 3),

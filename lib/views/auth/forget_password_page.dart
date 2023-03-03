@@ -39,7 +39,7 @@ class ForgetPasswordPage extends StatelessWidget {
                       'Reset your password',
                       style: Theme.of(context)
                           .textTheme
-                          .headline6
+                          .titleLarge
                           ?.copyWith(fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: AppDefaults.padding),

@@ -25,7 +25,7 @@ class ProfileHeader extends StatelessWidget {
               title: const Text('Profile'),
               elevation: 0,
               backgroundColor: Colors.transparent,
-              titleTextStyle: Theme.of(context).textTheme.headline6?.copyWith(
+              titleTextStyle: Theme.of(context).textTheme.titleLarge?.copyWith(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                   ),
@@ -67,7 +67,7 @@ class _UserData extends StatelessWidget {
             children: [
               Text(
                 'Shakibul Islam',
-                style: Theme.of(context).textTheme.headline6?.copyWith(
+                style: Theme.of(context).textTheme.titleLarge?.copyWith(
                     fontWeight: FontWeight.bold, color: Colors.white),
               ),
               const SizedBox(height: 8),

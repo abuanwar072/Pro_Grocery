@@ -77,7 +77,7 @@ class _LoginPageFormState extends State<LoginPageForm> {
                 ),
               ),
 
-              // Forget Password Button
+              // Forget Password labelLarge
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
@@ -88,7 +88,7 @@ class _LoginPageFormState extends State<LoginPageForm> {
                 ),
               ),
 
-              // Login Button
+              // Login labelLarge
               LoginButton(onPressed: onLogin),
             ],
           ),
