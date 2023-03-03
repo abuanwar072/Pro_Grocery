@@ -25,11 +25,16 @@ class HomePage extends StatelessWidget {
                     Navigator.pushNamed(context, AppRoutes.drawerPage);
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: const Color(0xFFF2F6F3),
+                    backgroundColor: const Color(0xFFF2F6F3),
                     shape: const CircleBorder(),
                   ),
                   child: SvgPicture.asset(AppIcons.sidebarIcon),
                 ),
+              ),
+              floating: true,
+              title: SvgPicture.asset(
+                "assets/images/app_logo.svg",
+                height: 32,
               ),
               actions: [
                 Padding(
@@ -39,7 +44,7 @@ class HomePage extends StatelessWidget {
                       Navigator.pushNamed(context, AppRoutes.search);
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFFF2F6F3),
+                      backgroundColor: const Color(0xFFF2F6F3),
                       shape: const CircleBorder(),
                     ),
                     child: SvgPicture.asset(AppIcons.search),
