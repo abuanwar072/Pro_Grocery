@@ -22,11 +22,10 @@ class PopularPacks extends StatelessWidget {
           padding: const EdgeInsets.only(left: AppDefaults.padding),
           scrollDirection: Axis.horizontal,
           child: Row(
-            children: [
-              BundleTileSquare(data: Dummy.bundles.first),
-              BundleTileSquare(data: Dummy.bundles.first),
-              BundleTileSquare(data: Dummy.bundles.first),
-            ],
+            children: List.generate(
+              Dummy.bundles.length,
+              (index) => BundleTileSquare(data: Dummy.bundles[index]),
+            ),
           ),
         ),
       ],
