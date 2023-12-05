@@ -62,7 +62,7 @@ class _LoginPageFormState extends State<LoginPageForm> {
                 validator: Validators.password,
                 onFieldSubmitted: (v) => onLogin(),
                 textInputAction: TextInputAction.done,
-                obscureText: isPasswordShown,
+                obscureText: !isPasswordShown,
                 decoration: InputDecoration(
                   suffixIcon: Material(
                     color: Colors.transparent,
