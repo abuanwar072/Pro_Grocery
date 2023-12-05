@@ -162,10 +162,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_credit_card
-      sha256: dffaee369b0e64fb81e63e78d6410762f73b67346692bd2ae7bdcc6d911452e3
+      sha256: "95522e85b7bccaf4829218890549dd70e2d82e78c7eb8ab6b03e2e7ce733934c"
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.1"
+    version: "3.0.7"
   flutter_launcher_icons:
     dependency: "direct dev"
     description:
