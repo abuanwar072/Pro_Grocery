@@ -17,9 +17,9 @@ class CheckoutPage extends StatelessWidget {
         leading: const AppBackButton(),
         title: const Text('Checkout'),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         child: Column(
-          children: const [
+          children: [
             AddressSelector(),
             PaymentSystem(),
             CardDetails(),

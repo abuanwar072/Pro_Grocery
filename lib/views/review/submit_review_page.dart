@@ -49,8 +49,6 @@ class SubmitReviewPage extends StatelessWidget {
                       ),
                 ),
               ),
-
-              /// TODO: Should We make this dynamic?
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: List.generate(

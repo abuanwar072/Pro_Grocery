@@ -75,11 +75,9 @@ class _CouponCodeFieldState extends State<CouponCodeField> {
                 child: ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
+                    foregroundColor: isFilled ? null : AppColors.placeholder, backgroundColor: isFilled ? null : Colors.grey.withOpacity(0.3), shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    primary: isFilled ? null : Colors.grey.withOpacity(0.3),
-                    onPrimary: isFilled ? null : AppColors.placeholder,
                   ),
                   child: const Text('Apply'),
                 ),

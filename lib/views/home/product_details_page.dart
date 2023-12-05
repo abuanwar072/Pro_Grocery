@@ -88,13 +88,13 @@ class ProductDetailsPage extends StatelessWidget {
             ),
 
             /// Review Row
-            Padding(
-              padding: const EdgeInsets.symmetric(
+            const Padding(
+              padding: EdgeInsets.symmetric(
                 horizontal: AppDefaults.padding,
                 // vertical: AppDefaults.padding,
               ),
               child: Column(
-                children: const [
+                children: [
                   Divider(thickness: 0.1),
                   ReviewRowButton(totalStars: 5),
                   Divider(thickness: 0.1),

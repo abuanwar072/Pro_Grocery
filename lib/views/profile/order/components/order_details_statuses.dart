@@ -10,8 +10,8 @@ class OrderStatusColumn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [
+    return const Column(
+      children: [
         OrderStatusRow(
           status: OrderStatus.confirmed,
           date: '12.12.2022',

@@ -52,7 +52,7 @@ class OrderDetailsProductTile extends StatelessWidget {
             const SizedBox(height: 8),
             Text(
               '3x',
-              style: Theme.of(context).textTheme.caption,
+              style: Theme.of(context).textTheme.bodySmall,
             )
           ],
         )

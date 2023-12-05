@@ -62,7 +62,7 @@ class CouponCard extends StatelessWidget {
                               discounts,
                               style: Theme.of(context)
                                   .textTheme
-                                  .headline3
+                                  .displaySmall
                                   ?.copyWith(
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white,
@@ -112,19 +112,17 @@ class CouponCard extends StatelessWidget {
                             ElevatedButton(
                               onPressed: () {},
                               style: ElevatedButton.styleFrom(
-                                padding: const EdgeInsets.symmetric(
+                                foregroundColor: AppColors.primary, backgroundColor: Colors.white, padding: const EdgeInsets.symmetric(
                                   vertical: 0,
                                   horizontal: AppDefaults.padding * 2,
                                 ),
-                                primary: Colors.white,
-                                onPrimary: AppColors.primary,
                                 shape: const StadiumBorder(),
                               ),
                               child: Text(
                                 'Collect',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .caption
+                                    .bodySmall
                                     ?.copyWith(
                                       color: AppColors.primary,
                                       fontWeight: FontWeight.bold,

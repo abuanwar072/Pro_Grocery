@@ -58,7 +58,7 @@ class BundleTileSquare extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                   ),
                   Text(
-                    '${data.itemNames.join(',')}',
+                    data.itemNames.join(','),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                   ),

@@ -110,11 +110,11 @@ class NewAddressPage extends StatelessWidget {
                   ),
                 ],
               ),
-              Padding(
+              const Padding(
                 padding:
-                    const EdgeInsets.symmetric(vertical: AppDefaults.padding),
+                    EdgeInsets.symmetric(vertical: AppDefaults.padding),
                 child: Row(
-                  children: const [
+                  children: [
                     AppRadio(isActive: true),
                     SizedBox(width: AppDefaults.padding),
                     Text('Make Default Shipping Address'),

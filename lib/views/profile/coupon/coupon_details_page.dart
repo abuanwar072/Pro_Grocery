@@ -93,10 +93,10 @@ class CouponBenefits extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(AppDefaults.padding),
+    return const Padding(
+      padding: EdgeInsets.all(AppDefaults.padding),
       child: Column(
-        children: const [
+        children: [
           BenefitsTile(
             details: 'Redeemable At All Sulphurfree Bura And Black Coffee',
           ),

@@ -30,8 +30,8 @@ class LanguageSettingsPage extends StatelessWidget {
             color: AppColors.scaffoldBackground,
             borderRadius: AppDefaults.borderRadius,
           ),
-          child: Column(
-            children: const [
+          child: const Column(
+            children: [
               _SearchField(),
               _SuggestedLanguage(),
               _AllCountries(),
@@ -50,9 +50,9 @@ class _AllCountries extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: const [
+      children: [
         SizedBox(height: AppDefaults.padding),
         Text('All Countries/Regions'),
         SizedBox(height: AppDefaults.padding),
@@ -74,9 +74,9 @@ class _SuggestedLanguage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: const [
+      children: [
         SizedBox(height: AppDefaults.padding),
         Text('Suggested'),
         SizedBox(height: AppDefaults.padding),

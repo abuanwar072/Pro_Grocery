@@ -4,7 +4,6 @@ import '../../core/components/app_back_button.dart';
 import '../../core/constants/constants.dart';
 import 'components/bundle_create_bottom_action_bar.dart';
 import 'components/bundle_create_food_categories.dart';
-import 'components/bundle_create_search_bar.dart';
 import 'components/product_grid_view.dart';
 
 class BundleCreatePage extends StatelessWidget {
@@ -17,8 +16,8 @@ class BundleCreatePage extends StatelessWidget {
         leading: const AppBackButton(),
         title: const Text('Create My Pack'),
       ),
-      body: Column(
-        children: const [
+      body: const Column(
+        children: [
           // SearchBar(),
           FoodCategories(),
           SizedBox(height: AppDefaults.padding / 2),

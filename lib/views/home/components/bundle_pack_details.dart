@@ -38,7 +38,7 @@ class PackDetails extends StatelessWidget {
                 '2 Kg',
                 style: Theme.of(context)
                     .textTheme
-                    .caption
+                    .bodySmall
                     ?.copyWith(color: Colors.black),
               ),
             ),

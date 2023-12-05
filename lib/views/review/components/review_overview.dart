@@ -11,15 +11,15 @@ class ReviewOverview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(AppDefaults.padding),
+    return const Padding(
+      padding: EdgeInsets.all(AppDefaults.padding),
       child: Row(
         children: [
-          const OverallStars(),
-          const SizedBox(width: AppDefaults.padding),
+          OverallStars(),
+          SizedBox(width: AppDefaults.padding),
           Expanded(
             child: Column(
-              children: const [
+              children: [
                 StarsRow(
                   label: '5 Stars',
                   maxValue: '200',

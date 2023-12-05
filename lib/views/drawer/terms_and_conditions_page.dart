@@ -13,8 +13,8 @@ class TermsAndConditionsPage extends StatelessWidget {
         leading: const AppBackButton(),
         title: const Text('Terms And Condition'),
       ),
-      body: Column(
-        children: const [
+      body: const Column(
+        children: [
           TitleAndParagraph(
               isTitleHeadline: false,
               title: 'General site usage last revised\nDecember 12-01-2020.',

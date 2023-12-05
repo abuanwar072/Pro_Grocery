@@ -41,10 +41,9 @@ class CategoriesChip extends StatelessWidget {
     return OutlinedButton(
       onPressed: () {},
       style: OutlinedButton.styleFrom(
-        padding:
+        foregroundColor: isActive ? Colors.white : AppColors.placeholder, padding:
             const EdgeInsets.symmetric(horizontal: AppDefaults.padding * 1.5),
         minimumSize: const Size(40, 48),
-        primary: isActive ? Colors.white : AppColors.placeholder,
         backgroundColor: isActive ? AppColors.primary : Colors.white,
         side: const BorderSide(color: AppColors.primary),
         textStyle: const TextStyle(

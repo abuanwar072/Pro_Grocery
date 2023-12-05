@@ -65,8 +65,7 @@ class DeliverySuccessfullDialog extends StatelessWidget {
                   Navigator.pushNamed(context, AppRoutes.entryPoint);
                 },
                 style: OutlinedButton.styleFrom(
-                  primary: AppColors.primary,
-                  side: const BorderSide(color: AppColors.primary),
+                  foregroundColor: AppColors.primary, side: const BorderSide(color: AppColors.primary),
                 ),
                 child: const Text('Browse Home'),
               ),

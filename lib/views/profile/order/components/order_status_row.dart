@@ -58,11 +58,11 @@ class OrderStatusRow extends StatelessWidget {
                 children: [
                   Text(
                     date,
-                    style: Theme.of(context).textTheme.caption,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                   Text(
                     time,
-                    style: Theme.of(context).textTheme.caption,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                 ],
               ),

@@ -52,7 +52,6 @@ import 'unknown_page.dart';
 class RouteGenerator {
   static Route? onGenerate(RouteSettings settings) {
     final route = settings.name;
-    final args = settings.arguments;
 
     switch (route) {
       case AppRoutes.introLogin:

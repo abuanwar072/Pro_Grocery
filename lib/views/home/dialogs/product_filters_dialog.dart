@@ -284,11 +284,11 @@ class _PriceRangeState extends State<_PriceRange> {
             inactiveColor: AppColors.gray,
             values: _currentRangeValues,
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Text('\$0'),
                 Text('\$50'),
                 Text('\$100'),
@@ -364,8 +364,7 @@ class _FilterHeader extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.zero,
-                primary: AppColors.scaffoldWithBoxBackground,
+                padding: EdgeInsets.zero, backgroundColor: AppColors.scaffoldWithBoxBackground,
               ),
               child: const Icon(
                 Icons.close,

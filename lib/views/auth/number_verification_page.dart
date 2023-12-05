@@ -27,8 +27,8 @@ class NumberVerificationPage extends StatelessWidget {
                     color: AppColors.scaffoldBackground,
                     borderRadius: AppDefaults.borderRadius,
                   ),
-                  child: Column(
-                    children: const [
+                  child: const Column(
+                    children: [
                       NumberVerificationHeader(),
                       OTPTextFields(),
                       SizedBox(height: AppDefaults.padding * 3),

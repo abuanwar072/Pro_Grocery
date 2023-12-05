@@ -13,8 +13,8 @@ class FAQPage extends StatelessWidget {
         leading: const AppBackButton(),
         title: const Text('FAQ'),
       ),
-      body: Column(
-        children: const [
+      body: const Column(
+        children: [
           TitleAndParagraph(
               title: '1. How it will take to delivery?',
               paragraph:

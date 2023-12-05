@@ -56,8 +56,7 @@ class IntroPageBodyArea extends StatelessWidget {
                     onPressed: () =>
                         Navigator.pushNamed(context, AppRoutes.signup),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.white,
-                      onPrimary: Colors.black,
+                      foregroundColor: Colors.black, backgroundColor: Colors.white,
                     ),
                     child: const Text('Create an account'),
                   ),

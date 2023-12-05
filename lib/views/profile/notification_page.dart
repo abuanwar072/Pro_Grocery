@@ -125,7 +125,7 @@ class NotificationTile extends StatelessWidget {
                   const SizedBox(height: 4),
                   Text(
                     time,
-                    style: Theme.of(context).textTheme.caption,
+                    style: Theme.of(context).textTheme.bodySmall,
                   ),
                 ],
               ),

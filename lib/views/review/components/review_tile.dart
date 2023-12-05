@@ -58,7 +58,7 @@ class ReviewTile extends StatelessWidget {
                     const Spacer(),
                     Text(
                       time,
-                      style: Theme.of(context).textTheme.caption,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ],
                 ),

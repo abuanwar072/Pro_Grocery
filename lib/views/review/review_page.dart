@@ -14,8 +14,8 @@ class ReviewPage extends StatelessWidget {
         leading: const AppBackButton(),
         title: const Text('Review'),
       ),
-      body: Column(
-        children: const [
+      body: const Column(
+        children: [
           ReviewOverview(),
           Divider(thickness: 0.1),
           ReviewLists(),

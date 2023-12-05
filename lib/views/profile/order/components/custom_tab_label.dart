@@ -20,7 +20,7 @@ class CustomTabLabel extends StatelessWidget {
         ),
         Text(
           value,
-          style: Theme.of(context).textTheme.caption?.copyWith(),
+          style: Theme.of(context).textTheme.bodySmall?.copyWith(),
         ),
       ],
     );
