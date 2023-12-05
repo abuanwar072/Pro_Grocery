@@ -1,5 +1,7 @@
 import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:grocery/core/constants/app_icons.dart';
 
 import '../../core/constants/app_colors.dart';
 import '../../core/constants/app_defaults.dart';
@@ -9,7 +11,6 @@ import '../menu/menu_page.dart';
 import '../profile/profile_page.dart';
 import '../save/save_page.dart';
 import 'components/app_navigation_bar.dart';
-import 'components/cart_menu_button.dart';
 
 /// This page will contain all the bottom navigation tabs
 class EntryPointUI extends StatefulWidget {
@@ -54,7 +55,13 @@ class _EntryPointUIState extends State<EntryPointUI> {
         duration: AppDefaults.duration,
         child: pages[currentIndex],
       ),
-      floatingActionButton: CartMenuButton(onNavTap: onBottomNavigationTap),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          onBottomNavigationTap(2);
+        },
+        backgroundColor: AppColors.primary,
+        child: SvgPicture.asset(AppIcons.cart),
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: AppBottomNavigationBar(
         currentIndex: currentIndex,

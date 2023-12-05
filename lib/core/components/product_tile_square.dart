@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 import '../constants/constants.dart';
 import '../models/dummy_product_model.dart';
@@ -25,7 +24,8 @@ class ProductTileSquare extends StatelessWidget {
           borderRadius: AppDefaults.borderRadius,
           onTap: () => Navigator.pushNamed(context, AppRoutes.productDetails),
           child: Container(
-            width: MediaQuery.of(context).size.width * 0.4,
+            width: 176,
+            height: 296,
             padding: const EdgeInsets.all(AppDefaults.padding),
             decoration: BoxDecoration(
               border: Border.all(width: 0.1, color: AppColors.placeholder),
@@ -34,38 +34,31 @@ class ProductTileSquare extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Align(
-                  alignment: Alignment.center,
-                  child: SizedBox(
-                    width: 85,
-                    height: 85,
-                    child: AspectRatio(
-                      aspectRatio: 1 / 1,
-                      child: NetworkImageWithLoader(
-                        data.cover,
-                        fit: BoxFit.contain,
-                      ),
+                Padding(
+                  padding: const EdgeInsets.all(AppDefaults.padding / 2),
+                  child: AspectRatio(
+                    aspectRatio: 1 / 1,
+                    child: NetworkImageWithLoader(
+                      data.cover,
+                      fit: BoxFit.contain,
                     ),
                   ),
                 ),
                 const SizedBox(height: 8),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    /// TODO: Should we add max lines here?
-                    Text(
-                      data.name,
-                      style: Theme.of(context)
-                          .textTheme
-                          .titleLarge
-                          ?.copyWith(color: Colors.black),
-                    ),
-                    Text(
-                      data.weight,
-                    ),
-                  ],
+                Text(
+                  data.name,
+                  style: Theme.of(context)
+                      .textTheme
+                      .titleMedium
+                      ?.copyWith(color: Colors.black),
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
                 ),
-                const SizedBox(height: 8),
+                const Spacer(),
+                Text(
+                  data.weight,
+                ),
+                const SizedBox(height: 4),
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.end,
@@ -85,15 +78,6 @@ class ProductTileSquare extends StatelessWidget {
                       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                             decoration: TextDecoration.lineThrough,
                           ),
-                    ),
-                    const Spacer(),
-                    IconButton(
-                      onPressed: () {},
-                      icon: SvgPicture.asset(AppIcons.addRounded),
-                      padding: EdgeInsets.zero,
-                      constraints: const BoxConstraints(
-                        maxHeight: 24,
-                      ),
                     ),
                   ],
                 )

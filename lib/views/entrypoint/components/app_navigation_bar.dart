@@ -20,7 +20,7 @@ class AppBottomNavigationBar extends StatelessWidget {
       notchMargin: AppDefaults.margin,
       color: AppColors.scaffoldBackground,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           BottomAppBarItem(
             name: 'Home',

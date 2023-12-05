@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 import '../constants/constants.dart';
 import '../models/dummy_bundle_model.dart';
@@ -16,91 +15,77 @@ class BundleTileSquare extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: AppDefaults.padding / 2),
-      child: Material(
-        color: AppColors.scaffoldBackground,
+    return Material(
+      color: AppColors.scaffoldBackground,
+      borderRadius: AppDefaults.borderRadius,
+      child: InkWell(
+        onTap: () {
+          Navigator.pushNamed(context, AppRoutes.bundleProduct);
+        },
         borderRadius: AppDefaults.borderRadius,
-        child: InkWell(
-          onTap: () {
-            Navigator.pushNamed(context, AppRoutes.bundleProduct);
-          },
-          borderRadius: AppDefaults.borderRadius,
-          child: Container(
-            width: MediaQuery.of(context).size.width * 0.4,
-            padding: const EdgeInsets.all(AppDefaults.padding),
-            decoration: BoxDecoration(
-              border: Border.all(width: 0.1, color: AppColors.placeholder),
-              borderRadius: AppDefaults.borderRadius,
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Align(
-                  alignment: Alignment.center,
-                  child: SizedBox(
-                    width: 85,
-                    height: 85,
-                    child: AspectRatio(
-                      aspectRatio: 1 / 1,
-                      child: NetworkImageWithLoader(
-                        data.cover,
-                        fit: BoxFit.contain,
-                      ),
-                    ),
+        child: Container(
+          width: 176,
+          padding: const EdgeInsets.symmetric(horizontal: AppDefaults.padding),
+          decoration: BoxDecoration(
+            border: Border.all(width: 0.1, color: AppColors.placeholder),
+            borderRadius: AppDefaults.borderRadius,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                child: AspectRatio(
+                  aspectRatio: 1 / 1,
+                  child: NetworkImageWithLoader(
+                    data.cover,
+                    fit: BoxFit.contain,
                   ),
                 ),
-                const SizedBox(height: 8),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      data.name,
-                      style: Theme.of(context)
-                          .textTheme
-                          .titleLarge
-                          ?.copyWith(color: Colors.black),
-                      maxLines: 2,
-                    ),
-                    Text(
-                      '${data.itemNames.join(',')} ...',
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 8),
-                Row(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [
-                    Text(
-                      '\$${data.price.toInt()}',
-                      style: Theme.of(context)
-                          .textTheme
-                          .titleLarge
-                          ?.copyWith(color: Colors.black),
-                    ),
-                    const SizedBox(
-                      width: 4,
-                    ),
-                    Text(
-                      '\$${data.mainPrice}',
-                      style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            decoration: TextDecoration.lineThrough,
-                          ),
-                    ),
-                    const Spacer(),
-                    IconButton(
-                      onPressed: () {},
-                      icon: SvgPicture.asset(AppIcons.addRounded),
-                      padding: EdgeInsets.zero,
-                      constraints: const BoxConstraints(
-                        maxHeight: 24,
-                      ),
-                    ),
-                  ],
-                )
-              ],
-            ),
+              ),
+              const SizedBox(height: 8),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    data.name,
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleLarge
+                        ?.copyWith(color: Colors.black),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  Text(
+                    '${data.itemNames.join(',')}',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ],
+              ),
+              const SizedBox(height: 8),
+              Row(
+                children: [
+                  Text(
+                    '\$${data.price.toInt()}',
+                    style: Theme.of(context)
+                        .textTheme
+                        .titleLarge
+                        ?.copyWith(color: Colors.black),
+                  ),
+                  const SizedBox(width: 4),
+                  Text(
+                    '\$${data.mainPrice}',
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                          decoration: TextDecoration.lineThrough,
+                        ),
+                  ),
+                  const Spacer(),
+                ],
+              ),
+              const SizedBox(height: 16),
+            ],
           ),
         ),
       ),

@@ -19,7 +19,7 @@ class BundleCreatePage extends StatelessWidget {
       ),
       body: Column(
         children: const [
-          SearchBar(),
+          // SearchBar(),
           FoodCategories(),
           SizedBox(height: AppDefaults.padding / 2),
           ProductGridView(),

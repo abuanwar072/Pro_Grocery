@@ -31,6 +31,7 @@ class AppTheme {
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary,
+          foregroundColor: Colors.white,
           padding: const EdgeInsets.all(AppDefaults.padding),
           elevation: 0,
           shape: RoundedRectangleBorder(

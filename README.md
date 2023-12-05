@@ -1,4 +1,4 @@
-# grocery
+# flutter_upgrde_app
 
 A new Flutter project.
 

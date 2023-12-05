@@ -69,7 +69,6 @@ class OrderPreviewTile extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    const SizedBox(width: AppDefaults.padding * 2),
                     Expanded(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,

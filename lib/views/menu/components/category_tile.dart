@@ -28,13 +28,12 @@ class CategoryTile extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              padding: const EdgeInsets.all(AppDefaults.padding * 1.5),
+              padding: const EdgeInsets.all(AppDefaults.padding * 1),
               decoration: BoxDecoration(
                 color: backgroundColor ?? AppColors.textInputBackground,
                 shape: BoxShape.circle,
               ),
               child: SizedBox(
-                height: 60,
                 width: 36,
                 child: AspectRatio(
                   aspectRatio: 1 / 1,
@@ -49,8 +48,10 @@ class CategoryTile extends StatelessWidget {
             Text(
               label,
               style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                    fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.w500,
                   ),
+              maxLines: 1,
+              textAlign: TextAlign.center,
             ),
           ],
         ),

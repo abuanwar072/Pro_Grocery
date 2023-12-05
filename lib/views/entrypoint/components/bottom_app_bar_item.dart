@@ -21,23 +21,20 @@ class BottomAppBarItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsets.all(AppDefaults.padding),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            SvgPicture.asset(
-              iconLocation,
-              color: isActive ? AppColors.primary : AppColors.placeholder,
-            ),
-            Text(
-              name,
-              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                    color: isActive ? AppColors.primary : AppColors.placeholder,
-                  ),
-            ),
-          ],
-        ),
+      child: Column(
+        // mainAxisSize: MainAxisSize.min,
+        children: [
+          SvgPicture.asset(
+            iconLocation,
+            color: isActive ? AppColors.primary : AppColors.placeholder,
+          ),
+          Text(
+            name,
+            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                  color: isActive ? AppColors.primary : AppColors.placeholder,
+                ),
+          ),
+        ],
       ),
     );
   }
