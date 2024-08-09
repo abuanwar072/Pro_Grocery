@@ -1,7 +1,7 @@
 import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:grocery/core/constants/app_icons.dart';
+import '../../core/constants/app_icons.dart';
 
 import '../../core/constants/app_colors.dart';
 import '../../core/constants/app_defaults.dart';

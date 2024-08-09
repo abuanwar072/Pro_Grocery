@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grocery/core/routes/app_routes.dart';
+import '../../core/routes/app_routes.dart';
 
 import '../../core/components/app_back_button.dart';
 import '../../core/constants/constants.dart';
