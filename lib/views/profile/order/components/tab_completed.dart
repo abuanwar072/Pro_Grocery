@@ -6,8 +6,8 @@ import 'order_preview_tile.dart';
 
 class CompletedTab extends StatelessWidget {
   const CompletedTab({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

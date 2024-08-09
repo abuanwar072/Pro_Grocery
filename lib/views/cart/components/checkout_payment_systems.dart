@@ -5,8 +5,8 @@ import 'checkout_payment_card_tile.dart';
 
 class PaymentSystem extends StatelessWidget {
   const PaymentSystem({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -6,8 +6,8 @@ import '../../../core/routes/app_routes.dart';
 
 class HeaderHomePage extends StatelessWidget {
   const HeaderHomePage({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +28,7 @@ class HeaderHomePage extends StatelessWidget {
 }
 
 class _SearchButton extends StatelessWidget {
-  const _SearchButton({
-    Key? key,
-  }) : super(key: key);
+  const _SearchButton();
 
   @override
   Widget build(BuildContext context) {
@@ -49,9 +47,7 @@ class _SearchButton extends StatelessWidget {
 }
 
 class _SideBarButton extends StatelessWidget {
-  const _SideBarButton({
-    Key? key,
-  }) : super(key: key);
+  const _SideBarButton();
 
   @override
   Widget build(BuildContext context) {
@@ -70,9 +66,7 @@ class _SideBarButton extends StatelessWidget {
 }
 
 class _CurrentLocationDropDown extends StatelessWidget {
-  const _CurrentLocationDropDown({
-    Key? key,
-  }) : super(key: key);
+  const _CurrentLocationDropDown();
 
   @override
   Widget build(BuildContext context) {

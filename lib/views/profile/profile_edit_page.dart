@@ -4,7 +4,7 @@ import '../../core/components/app_back_button.dart';
 import '../../core/constants/constants.dart';
 
 class ProfileEditPage extends StatelessWidget {
-  const ProfileEditPage({Key? key}) : super(key: key);
+  const ProfileEditPage({super.key});
 
   @override
   Widget build(BuildContext context) {

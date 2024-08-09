@@ -4,7 +4,7 @@ import '../../core/components/app_back_button.dart';
 import 'components/faq_item.dart';
 
 class FAQPage extends StatelessWidget {
-  const FAQPage({Key? key}) : super(key: key);
+  const FAQPage({super.key});
 
   @override
   Widget build(BuildContext context) {

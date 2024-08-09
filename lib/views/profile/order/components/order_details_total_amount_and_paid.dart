@@ -4,8 +4,8 @@ import '../../../../core/constants/constants.dart';
 
 class TotalAmountAndPaidData extends StatelessWidget {
   const TotalAmountAndPaidData({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

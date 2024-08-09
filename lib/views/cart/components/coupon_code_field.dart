@@ -4,8 +4,8 @@ import '../../../core/constants/constants.dart';
 
 class CouponCodeField extends StatefulWidget {
   const CouponCodeField({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<CouponCodeField> createState() => _CouponCodeFieldState();
@@ -75,7 +75,10 @@ class _CouponCodeFieldState extends State<CouponCodeField> {
                 child: ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: isFilled ? null : AppColors.placeholder, backgroundColor: isFilled ? null : Colors.grey.withOpacity(0.3), shape: RoundedRectangleBorder(
+                    foregroundColor: isFilled ? null : AppColors.placeholder,
+                    backgroundColor:
+                        isFilled ? null : Colors.grey.withOpacity(0.3),
+                    shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),
                   ),

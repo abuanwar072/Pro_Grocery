@@ -9,9 +9,9 @@ import 'components/single_cart_item_tile.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({
-    Key? key,
+    super.key,
     this.isHomePage = false,
-  }) : super(key: key);
+  });
 
   final bool isHomePage;
 

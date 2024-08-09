@@ -4,8 +4,8 @@ import '../../../core/routes/app_routes.dart';
 
 class DontHaveAccountRow extends StatelessWidget {
   const DontHaveAccountRow({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

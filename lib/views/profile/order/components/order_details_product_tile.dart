@@ -5,9 +5,9 @@ import '../../../../core/models/dummy_product_model.dart';
 
 class OrderDetailsProductTile extends StatelessWidget {
   const OrderDetailsProductTile({
-    Key? key,
+    super.key,
     required this.data,
-  }) : super(key: key);
+  });
 
   final ProductModel data;
 

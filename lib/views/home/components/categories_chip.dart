@@ -5,11 +5,11 @@ import '../../../core/constants/app_colors.dart';
 
 class CategoriesChip extends StatelessWidget {
   const CategoriesChip({
-    Key? key,
+    super.key,
     required this.isActive,
     required this.label,
     required this.onPressed,
-  }) : super(key: key);
+  });
 
   final bool isActive;
   final String label;
@@ -41,7 +41,8 @@ class CategoriesChip extends StatelessWidget {
     return OutlinedButton(
       onPressed: () {},
       style: OutlinedButton.styleFrom(
-        foregroundColor: isActive ? Colors.white : AppColors.placeholder, padding:
+        foregroundColor: isActive ? Colors.white : AppColors.placeholder,
+        padding:
             const EdgeInsets.symmetric(horizontal: AppDefaults.padding * 1.5),
         minimumSize: const Size(40, 48),
         backgroundColor: isActive ? AppColors.primary : Colors.white,

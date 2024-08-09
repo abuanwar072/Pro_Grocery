@@ -6,7 +6,7 @@ import '../../../core/constants/app_defaults.dart';
 import 'components/coupon_card.dart';
 
 class CouponDetailsPage extends StatelessWidget {
-  const CouponDetailsPage({Key? key}) : super(key: key);
+  const CouponDetailsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -88,8 +88,8 @@ class CouponDetailsPage extends StatelessWidget {
 
 class CouponBenefits extends StatelessWidget {
   const CouponBenefits({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -117,10 +117,10 @@ class CouponBenefits extends StatelessWidget {
 
 class BenefitsTile extends StatelessWidget {
   const BenefitsTile({
-    Key? key,
+    super.key,
     required this.details,
     this.onTap,
-  }) : super(key: key);
+  });
 
   final String details;
   final void Function()? onTap;

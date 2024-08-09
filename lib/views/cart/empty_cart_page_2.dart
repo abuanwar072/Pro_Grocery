@@ -4,7 +4,7 @@ import '../../core/components/network_image.dart';
 import '../../core/constants/app_defaults.dart';
 
 class EmptyCartPageSecond extends StatelessWidget {
-  const EmptyCartPageSecond({Key? key}) : super(key: key);
+  const EmptyCartPageSecond({super.key});
 
   @override
   Widget build(BuildContext context) {

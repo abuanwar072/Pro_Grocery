@@ -14,7 +14,7 @@ import 'components/app_navigation_bar.dart';
 
 /// This page will contain all the bottom navigation tabs
 class EntryPointUI extends StatefulWidget {
-  const EntryPointUI({Key? key}) : super(key: key);
+  const EntryPointUI({super.key});
 
   @override
   State<EntryPointUI> createState() => _EntryPointUIState();

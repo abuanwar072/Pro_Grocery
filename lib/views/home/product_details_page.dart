@@ -8,7 +8,7 @@ import '../../core/components/review_row_button.dart';
 import '../../core/constants/app_defaults.dart';
 
 class ProductDetailsPage extends StatelessWidget {
-  const ProductDetailsPage({Key? key}) : super(key: key);
+  const ProductDetailsPage({super.key});
 
   @override
   Widget build(BuildContext context) {

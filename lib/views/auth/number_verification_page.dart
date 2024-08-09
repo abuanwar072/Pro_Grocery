@@ -9,7 +9,7 @@ import '../../core/themes/app_themes.dart';
 import 'dialogs/verified_dialogs.dart';
 
 class NumberVerificationPage extends StatelessWidget {
-  const NumberVerificationPage({Key? key}) : super(key: key);
+  const NumberVerificationPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -50,8 +50,8 @@ class NumberVerificationPage extends StatelessWidget {
 
 class VerifyButton extends StatelessWidget {
   const VerifyButton({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -78,8 +78,8 @@ class VerifyButton extends StatelessWidget {
 
 class ResendButton extends StatelessWidget {
   const ResendButton({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -98,8 +98,8 @@ class ResendButton extends StatelessWidget {
 
 class NumberVerificationHeader extends StatelessWidget {
   const NumberVerificationHeader({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -128,8 +128,8 @@ class NumberVerificationHeader extends StatelessWidget {
 
 class OTPTextFields extends StatelessWidget {
   const OTPTextFields({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

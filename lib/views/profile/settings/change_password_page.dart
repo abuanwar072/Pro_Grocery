@@ -5,7 +5,7 @@ import '../../../core/components/app_back_button.dart';
 import '../../../core/constants/constants.dart';
 
 class ChangePasswordPage extends StatelessWidget {
-  const ChangePasswordPage({Key? key}) : super(key: key);
+  const ChangePasswordPage({super.key});
 
   @override
   Widget build(BuildContext context) {

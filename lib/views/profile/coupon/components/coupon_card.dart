@@ -5,14 +5,14 @@ import '../../../../core/constants/constants.dart';
 
 class CouponCard extends StatelessWidget {
   const CouponCard({
-    Key? key,
+    super.key,
     this.couponBackground,
     required this.discounts,
     required this.title,
     required this.expire,
     this.color,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   final String? couponBackground;
   final String discounts;
@@ -112,7 +112,9 @@ class CouponCard extends StatelessWidget {
                             ElevatedButton(
                               onPressed: () {},
                               style: ElevatedButton.styleFrom(
-                                foregroundColor: AppColors.primary, backgroundColor: Colors.white, padding: const EdgeInsets.symmetric(
+                                foregroundColor: AppColors.primary,
+                                backgroundColor: Colors.white,
+                                padding: const EdgeInsets.symmetric(
                                   vertical: 0,
                                   horizontal: AppDefaults.padding * 2,
                                 ),

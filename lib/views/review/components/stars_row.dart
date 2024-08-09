@@ -4,11 +4,11 @@ import '../../../core/constants/constants.dart';
 
 class StarsRow extends StatelessWidget {
   const StarsRow({
-    Key? key,
+    super.key,
     required this.label,
     required this.maxValue,
     required this.totalPercentage,
-  }) : super(key: key);
+  });
 
   final String label;
   final String maxValue;

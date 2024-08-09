@@ -6,7 +6,7 @@ import 'components/sign_up_form.dart';
 import 'components/sign_up_page_header.dart';
 
 class SignUpPage extends StatelessWidget {
-  const SignUpPage({Key? key}) : super(key: key);
+  const SignUpPage({super.key});
 
   @override
   Widget build(BuildContext context) {

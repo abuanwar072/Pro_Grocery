@@ -5,8 +5,8 @@ import 'checkout_address_card.dart';
 
 class AddressSelector extends StatelessWidget {
   const AddressSelector({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

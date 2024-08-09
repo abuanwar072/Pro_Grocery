@@ -5,7 +5,7 @@ import '../../core/components/app_back_button.dart';
 import '../../core/constants/constants.dart';
 
 class PasswordResetPage extends StatelessWidget {
-  const PasswordResetPage({Key? key}) : super(key: key);
+  const PasswordResetPage({super.key});
 
   @override
   Widget build(BuildContext context) {

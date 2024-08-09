@@ -5,13 +5,13 @@ import '../../../core/constants/constants.dart';
 
 class AddressCard extends StatelessWidget {
   const AddressCard({
-    Key? key,
+    super.key,
     required this.label,
     required this.phoneNumber,
     required this.address,
     required this.isActive,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   final String label;
   final String phoneNumber;

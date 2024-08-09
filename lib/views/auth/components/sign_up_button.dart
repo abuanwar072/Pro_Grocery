@@ -6,8 +6,8 @@ import '../../../core/routes/app_routes.dart';
 
 class SignUpButton extends StatelessWidget {
   const SignUpButton({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,10 @@ class SignUpButton extends StatelessWidget {
             style: ElevatedButton.styleFrom(elevation: 1),
             child: SvgPicture.asset(
               AppIcons.arrowForward,
-              color: Colors.white,
+              colorFilter: const ColorFilter.mode(
+                Colors.white,
+                BlendMode.srcIn,
+              ),
             ),
           ),
         ],

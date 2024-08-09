@@ -4,8 +4,8 @@ import '../../../core/constants/constants.dart';
 
 class SignUpPageHeader extends StatelessWidget {
   const SignUpPageHeader({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -5,7 +5,7 @@ import 'components/intro_page_background_wrapper.dart';
 import 'components/intro_page_body_area.dart';
 
 class IntroLoginPage extends StatelessWidget {
-  const IntroLoginPage({Key? key}) : super(key: key);
+  const IntroLoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {

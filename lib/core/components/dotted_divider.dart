@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class DottedDivider extends StatelessWidget {
   const DottedDivider({
-    Key? key,
+    super.key,
     this.isVertical = false,
     this.color,
-  }) : super(key: key);
+  });
 
   final Color? color;
   final bool isVertical;

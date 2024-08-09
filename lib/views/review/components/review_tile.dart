@@ -7,7 +7,7 @@ import '../../../core/constants/constants.dart';
 
 class ReviewTile extends StatelessWidget {
   const ReviewTile({
-    Key? key,
+    super.key,
     required this.review,
     required this.starsGiven,
     required this.userName,
@@ -15,7 +15,7 @@ class ReviewTile extends StatelessWidget {
     required this.time,
     required this.isFavourite,
     required this.totalLikes,
-  }) : super(key: key);
+  });
 
   final String review;
   final int starsGiven;

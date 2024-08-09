@@ -5,8 +5,8 @@ import 'order_status_row.dart';
 
 class OrderStatusColumn extends StatelessWidget {
   const OrderStatusColumn({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

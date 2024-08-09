@@ -8,7 +8,7 @@ import 'components/order_details_total_amount_and_paid.dart';
 import 'components/order_details_total_order_product_details.dart';
 
 class OrderDetailsPage extends StatelessWidget {
-  const OrderDetailsPage({Key? key}) : super(key: key);
+  const OrderDetailsPage({super.key});
 
   @override
   Widget build(BuildContext context) {

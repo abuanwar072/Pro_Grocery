@@ -6,8 +6,8 @@ import '../../../core/routes/app_routes.dart';
 
 class IntroPageBodyArea extends StatelessWidget {
   const IntroPageBodyArea({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +56,8 @@ class IntroPageBodyArea extends StatelessWidget {
                     onPressed: () =>
                         Navigator.pushNamed(context, AppRoutes.signup),
                     style: ElevatedButton.styleFrom(
-                      foregroundColor: Colors.black, backgroundColor: Colors.white,
+                      foregroundColor: Colors.black,
+                      backgroundColor: Colors.white,
                     ),
                     child: const Text('Create an account'),
                   ),

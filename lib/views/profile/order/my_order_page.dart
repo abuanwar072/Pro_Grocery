@@ -8,7 +8,7 @@ import 'components/tab_completed.dart';
 import 'components/tab_running.dart';
 
 class AllOrderPage extends StatelessWidget {
-  const AllOrderPage({Key? key}) : super(key: key);
+  const AllOrderPage({super.key});
 
   @override
   Widget build(BuildContext context) {

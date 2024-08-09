@@ -5,12 +5,12 @@ import '../../../core/constants/constants.dart';
 
 class CategoryTile extends StatelessWidget {
   const CategoryTile({
-    Key? key,
+    super.key,
     required this.imageLink,
     required this.label,
     this.backgroundColor,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   final String imageLink;
   final String label;

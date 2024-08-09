@@ -7,7 +7,7 @@ import '../../core/constants/constants.dart';
 import '../../core/routes/app_routes.dart';
 
 class PopularPackPage extends StatelessWidget {
-  const PopularPackPage({Key? key}) : super(key: key);
+  const PopularPackPage({super.key});
 
   @override
   Widget build(BuildContext context) {

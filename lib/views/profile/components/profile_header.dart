@@ -6,8 +6,8 @@ import 'profile_header_options.dart';
 
 class ProfileHeader extends StatelessWidget {
   const ProfileHeader({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -38,9 +38,7 @@ class ProfileHeader extends StatelessWidget {
 }
 
 class _UserData extends StatelessWidget {
-  const _UserData({
-    Key? key,
-  }) : super(key: key);
+  const _UserData();
 
   @override
   Widget build(BuildContext context) {

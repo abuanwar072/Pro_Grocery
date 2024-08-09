@@ -4,12 +4,12 @@ import '../constants/constants.dart';
 
 class TitleAndActionButton extends StatelessWidget {
   const TitleAndActionButton({
-    Key? key,
+    super.key,
     required this.title,
     this.actionLabel,
     required this.onTap,
     this.isHeadline = true,
-  }) : super(key: key);
+  });
 
   final String title;
   final String? actionLabel;

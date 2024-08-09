@@ -5,10 +5,10 @@ import '../../../core/constants/constants.dart';
 
 class ProductAvatarWithQuanitty extends StatelessWidget {
   const ProductAvatarWithQuanitty({
-    Key? key,
+    super.key,
     required this.productImage,
     required this.quantity,
-  }) : super(key: key);
+  });
 
   final String productImage;
   final int quantity;

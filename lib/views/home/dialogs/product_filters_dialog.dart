@@ -4,7 +4,7 @@ import '../../../core/constants/constants.dart';
 import '../components/categories_chip.dart';
 
 class ProductFiltersDialog extends StatelessWidget {
-  const ProductFiltersDialog({Key? key}) : super(key: key);
+  const ProductFiltersDialog({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -54,10 +54,9 @@ class ProductFiltersDialog extends StatelessWidget {
 
 class _RatingStar extends StatelessWidget {
   const _RatingStar({
-    Key? key,
     required this.totalStarsSelected,
     required this.onStarSelect,
-  }) : super(key: key);
+  });
 
   final int totalStarsSelected;
   final void Function(int) onStarSelect;
@@ -113,9 +112,7 @@ class _RatingStar extends StatelessWidget {
 }
 
 class _BrandSelector extends StatelessWidget {
-  const _BrandSelector({
-    Key? key,
-  }) : super(key: key);
+  const _BrandSelector();
 
   @override
   Widget build(BuildContext context) {
@@ -176,9 +173,7 @@ class _BrandSelector extends StatelessWidget {
 }
 
 class _CategoriesSelector extends StatelessWidget {
-  const _CategoriesSelector({
-    Key? key,
-  }) : super(key: key);
+  const _CategoriesSelector();
 
   @override
   Widget build(BuildContext context) {
@@ -241,9 +236,7 @@ class _CategoriesSelector extends StatelessWidget {
 }
 
 class _PriceRange extends StatefulWidget {
-  const _PriceRange({
-    Key? key,
-  }) : super(key: key);
+  const _PriceRange();
 
   @override
   State<_PriceRange> createState() => _PriceRangeState();
@@ -302,9 +295,7 @@ class _PriceRangeState extends State<_PriceRange> {
 }
 
 class _SortBy extends StatelessWidget {
-  const _SortBy({
-    Key? key,
-  }) : super(key: key);
+  const _SortBy();
 
   @override
   Widget build(BuildContext context) {
@@ -346,9 +337,7 @@ class _SortBy extends StatelessWidget {
 }
 
 class _FilterHeader extends StatelessWidget {
-  const _FilterHeader({
-    Key? key,
-  }) : super(key: key);
+  const _FilterHeader();
 
   @override
   Widget build(BuildContext context) {
@@ -364,7 +353,8 @@ class _FilterHeader extends StatelessWidget {
             child: ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.zero, backgroundColor: AppColors.scaffoldWithBoxBackground,
+                padding: EdgeInsets.zero,
+                backgroundColor: AppColors.scaffoldWithBoxBackground,
               ),
               child: const Icon(
                 Icons.close,

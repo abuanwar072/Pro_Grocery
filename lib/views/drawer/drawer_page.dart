@@ -8,7 +8,7 @@ import '../../core/routes/app_routes.dart';
 import '../../core/components/app_settings_tile.dart';
 
 class DrawerPage extends StatelessWidget {
-  const DrawerPage({Key? key}) : super(key: key);
+  const DrawerPage({super.key});
 
   @override
   Widget build(BuildContext context) {

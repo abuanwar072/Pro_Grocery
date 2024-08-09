@@ -6,7 +6,7 @@ import '../../core/constants/constants.dart';
 import '../../core/routes/app_routes.dart';
 
 class SubmitReviewPage extends StatelessWidget {
-  const SubmitReviewPage({Key? key}) : super(key: key);
+  const SubmitReviewPage({super.key});
 
   @override
   Widget build(BuildContext context) {

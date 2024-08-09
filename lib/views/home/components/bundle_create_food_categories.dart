@@ -5,8 +5,8 @@ import 'app_chip.dart';
 
 class FoodCategories extends StatelessWidget {
   const FoodCategories({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -7,7 +7,7 @@ import 'components/login_page_form.dart';
 import 'components/social_logins.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {

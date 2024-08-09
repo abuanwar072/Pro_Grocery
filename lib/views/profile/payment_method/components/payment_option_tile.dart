@@ -5,12 +5,12 @@ import '../../../../core/constants/constants.dart';
 
 class PaymentOptionTile extends StatelessWidget {
   const PaymentOptionTile({
-    Key? key,
+    super.key,
     required this.icon,
     required this.label,
     required this.accountName,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   final String icon;
   final String label;

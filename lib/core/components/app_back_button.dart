@@ -6,8 +6,8 @@ import '../constants/constants.dart';
 class AppBackButton extends StatelessWidget {
   /// Custom Back labelLarge with a custom ICON for this app
   const AppBackButton({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

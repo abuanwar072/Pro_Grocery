@@ -9,8 +9,8 @@ import 'sign_up_button.dart';
 
 class SignUpForm extends StatelessWidget {
   const SignUpForm({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class SignUpForm extends StatelessWidget {
           const Text("Name"),
           const SizedBox(height: 8),
           TextFormField(
-            validator: Validators.requiredWithFieldName('Name'),
+            validator: Validators.requiredWithFieldName('Name').call,
             textInputAction: TextInputAction.next,
           ),
           const SizedBox(height: AppDefaults.padding),
@@ -36,7 +36,7 @@ class SignUpForm extends StatelessWidget {
           const SizedBox(height: 8),
           TextFormField(
             textInputAction: TextInputAction.next,
-            validator: Validators.required,
+            validator: Validators.required.call,
             keyboardType: TextInputType.number,
             inputFormatters: [FilteringTextInputFormatter.digitsOnly],
           ),
@@ -44,7 +44,7 @@ class SignUpForm extends StatelessWidget {
           const Text("Password"),
           const SizedBox(height: 8),
           TextFormField(
-            validator: Validators.required,
+            validator: Validators.required.call,
             textInputAction: TextInputAction.next,
             obscureText: true,
             decoration: InputDecoration(

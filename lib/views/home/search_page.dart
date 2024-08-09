@@ -10,7 +10,7 @@ import '../../core/utils/ui_util.dart';
 import 'dialogs/product_filters_dialog.dart';
 
 class SearchPage extends StatelessWidget {
-  const SearchPage({Key? key}) : super(key: key);
+  const SearchPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,9 +29,7 @@ class SearchPage extends StatelessWidget {
 }
 
 class _RecentSearchList extends StatelessWidget {
-  const _RecentSearchList({
-    Key? key,
-  }) : super(key: key);
+  const _RecentSearchList();
 
   @override
   Widget build(BuildContext context) {
@@ -70,9 +68,7 @@ class _RecentSearchList extends StatelessWidget {
 }
 
 class _SearchPageHeader extends StatelessWidget {
-  const _SearchPageHeader({
-    Key? key,
-  }) : super(key: key);
+  const _SearchPageHeader();
 
   @override
   Widget build(BuildContext context) {
@@ -94,7 +90,10 @@ class _SearchPageHeader extends StatelessWidget {
                         padding: const EdgeInsets.all(AppDefaults.padding),
                         child: SvgPicture.asset(
                           AppIcons.search,
-                          color: AppColors.primary,
+                          colorFilter: const ColorFilter.mode(
+                            AppColors.primary,
+                            BlendMode.srcIn,
+                          ),
                         ),
                       ),
                       prefixIconConstraints: const BoxConstraints(),
@@ -141,8 +140,8 @@ class _SearchPageHeader extends StatelessWidget {
 
 class SearchHistoryTile extends StatelessWidget {
   const SearchHistoryTile({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

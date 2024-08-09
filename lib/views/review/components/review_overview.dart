@@ -6,8 +6,8 @@ import 'stars_row.dart';
 
 class ReviewOverview extends StatelessWidget {
   const ReviewOverview({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

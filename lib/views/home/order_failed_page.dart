@@ -4,7 +4,7 @@ import '../../core/components/network_image.dart';
 import '../../core/constants/app_defaults.dart';
 
 class OrderFailedPage extends StatelessWidget {
-  const OrderFailedPage({Key? key}) : super(key: key);
+  const OrderFailedPage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -5,8 +5,8 @@ import '../../../core/constants/constants.dart';
 
 class AdSpace extends StatelessWidget {
   const AdSpace({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

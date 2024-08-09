@@ -6,7 +6,7 @@ import '../../core/constants/constants.dart';
 import '../../core/routes/app_routes.dart';
 
 class LoginOrSignUpPage extends StatelessWidget {
-  const LoginOrSignUpPage({Key? key}) : super(key: key);
+  const LoginOrSignUpPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,9 +25,7 @@ class LoginOrSignUpPage extends StatelessWidget {
 }
 
 class _Footer extends StatelessWidget {
-  const _Footer({
-    Key? key,
-  }) : super(key: key);
+  const _Footer();
 
   @override
   Widget build(BuildContext context) {
@@ -83,9 +81,7 @@ class _Footer extends StatelessWidget {
 }
 
 class _AppLogoAndHeadline extends StatelessWidget {
-  const _AppLogoAndHeadline({
-    Key? key,
-  }) : super(key: key);
+  const _AppLogoAndHeadline();
 
   @override
   Widget build(BuildContext context) {

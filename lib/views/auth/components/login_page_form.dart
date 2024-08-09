@@ -9,8 +9,8 @@ import 'login_button.dart';
 
 class LoginPageForm extends StatefulWidget {
   const LoginPageForm({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<LoginPageForm> createState() => _LoginPageFormState();
@@ -50,7 +50,7 @@ class _LoginPageFormState extends State<LoginPageForm> {
               const SizedBox(height: 8),
               TextFormField(
                 keyboardType: TextInputType.number,
-                validator: Validators.requiredWithFieldName('Phone'),
+                validator: Validators.requiredWithFieldName('Phone').call,
                 textInputAction: TextInputAction.next,
               ),
               const SizedBox(height: AppDefaults.padding),
@@ -59,7 +59,7 @@ class _LoginPageFormState extends State<LoginPageForm> {
               const Text("Password"),
               const SizedBox(height: 8),
               TextFormField(
-                validator: Validators.password,
+                validator: Validators.password.call,
                 onFieldSubmitted: (v) => onLogin(),
                 textInputAction: TextInputAction.done,
                 obscureText: !isPasswordShown,

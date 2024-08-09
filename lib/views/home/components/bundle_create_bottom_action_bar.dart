@@ -6,8 +6,8 @@ import 'product_avatar_with_quantity.dart';
 
 class BottomActionBar extends StatelessWidget {
   const BottomActionBar({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

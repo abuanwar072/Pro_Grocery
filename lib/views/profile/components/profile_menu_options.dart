@@ -6,8 +6,8 @@ import 'profile_list_tile.dart';
 
 class ProfileMenuOptions extends StatelessWidget {
   const ProfileMenuOptions({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -4,9 +4,9 @@ import 'empty_save_page.dart';
 
 class SavePage extends StatelessWidget {
   const SavePage({
-    Key? key,
+    super.key,
     this.isHomePage = false,
-  }) : super(key: key);
+  });
 
   final bool isHomePage;
 

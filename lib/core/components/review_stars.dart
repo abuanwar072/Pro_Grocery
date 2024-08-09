@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class ReviewStars extends StatelessWidget {
   const ReviewStars({
-    Key? key,
+    super.key,
     required this.starsGiven,
     this.iconSize,
-  }) : super(key: key);
+  });
 
   final int starsGiven;
   final double? iconSize;

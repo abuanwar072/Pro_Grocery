@@ -6,8 +6,8 @@ import '../../../core/themes/app_themes.dart';
 
 class SearchBar extends StatelessWidget {
   const SearchBar({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,10 @@ class SearchBar extends StatelessWidget {
               icon: SvgPicture.asset(
                 AppIcons.search,
                 width: 24,
-                color: AppColors.placeholder,
+                colorFilter: const ColorFilter.mode(
+                  AppColors.placeholder,
+                  BlendMode.srcIn,
+                ),
               ),
               onPressed: () {},
             ),

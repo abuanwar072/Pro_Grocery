@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class CustomTabLabel extends StatelessWidget {
   const CustomTabLabel({
-    Key? key,
+    super.key,
     required this.label,
     required this.value,
-  }) : super(key: key);
+  });
 
   final String label;
   final String value;

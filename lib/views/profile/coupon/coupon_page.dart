@@ -6,7 +6,7 @@ import '../../../core/routes/app_routes.dart';
 import 'components/coupon_card.dart';
 
 class CouponAndOffersPage extends StatelessWidget {
-  const CouponAndOffersPage({Key? key}) : super(key: key);
+  const CouponAndOffersPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -41,8 +41,8 @@ class CouponAndOffersPage extends StatelessWidget {
 
 class CouponLists extends StatelessWidget {
   const CouponLists({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

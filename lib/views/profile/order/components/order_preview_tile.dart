@@ -5,12 +5,12 @@ import '../../../../core/enums/dummy_order_status.dart';
 
 class OrderPreviewTile extends StatelessWidget {
   const OrderPreviewTile({
-    Key? key,
+    super.key,
     required this.orderID,
     required this.date,
     required this.status,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   final String orderID;
   final String date;

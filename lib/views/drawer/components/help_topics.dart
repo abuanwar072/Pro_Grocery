@@ -6,8 +6,8 @@ import '../../../core/constants/constants.dart';
 
 class HelpTopics extends StatelessWidget {
   const HelpTopics({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

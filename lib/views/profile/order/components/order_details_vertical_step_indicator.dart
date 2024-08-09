@@ -4,12 +4,12 @@ import '../../../../core/constants/constants.dart';
 
 class VerticalStepIndicator extends StatelessWidget {
   const VerticalStepIndicator({
-    Key? key,
+    super.key,
     this.height = 50,
     this.isStart = false,
     this.isActive = false,
     this.isEnd = false,
-  }) : super(key: key);
+  });
 
   final double height;
   final bool isStart;

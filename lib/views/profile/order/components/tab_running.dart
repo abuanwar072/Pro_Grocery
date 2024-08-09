@@ -6,8 +6,8 @@ import 'order_preview_tile.dart';
 
 class RunningTab extends StatelessWidget {
   const RunningTab({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

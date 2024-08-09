@@ -4,9 +4,9 @@ import '../constants/app_colors.dart';
 
 class ReviewRowButton extends StatelessWidget {
   const ReviewRowButton({
-    Key? key,
+    super.key,
     required this.totalStars,
-  }) : super(key: key);
+  });
 
   final int totalStars;
 

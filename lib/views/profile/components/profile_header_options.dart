@@ -6,8 +6,8 @@ import 'profile_squre_tile.dart';
 
 class ProfileHeaderOptions extends StatelessWidget {
   const ProfileHeaderOptions({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

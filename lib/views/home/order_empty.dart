@@ -4,7 +4,7 @@ import '../../core/components/network_image.dart';
 import '../../core/constants/constants.dart';
 
 class OrderEmpty extends StatelessWidget {
-  const OrderEmpty({Key? key}) : super(key: key);
+  const OrderEmpty({super.key});
 
   @override
   Widget build(BuildContext context) {
