@@ -5,8 +5,8 @@ import '../../../core/constants/constants.dart';
 
 class CardDetails extends StatelessWidget {
   const CardDetails({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

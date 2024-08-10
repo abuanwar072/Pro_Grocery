@@ -5,7 +5,7 @@ import '../../core/routes/app_routes.dart';
 import 'components/category_tile.dart';
 
 class MenuPage extends StatelessWidget {
-  const MenuPage({Key? key}) : super(key: key);
+  const MenuPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,8 +30,8 @@ class MenuPage extends StatelessWidget {
 
 class CateogoriesGrid extends StatelessWidget {
   const CateogoriesGrid({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

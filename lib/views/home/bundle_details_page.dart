@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../core/components/app_back_button.dart';
 
 class BundleDetailsPage extends StatelessWidget {
-  const BundleDetailsPage({Key? key}) : super(key: key);
+  const BundleDetailsPage({super.key});
 
   @override
   Widget build(BuildContext context) {

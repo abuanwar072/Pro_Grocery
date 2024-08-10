@@ -6,7 +6,7 @@ import '../../core/components/product_tile_square.dart';
 import '../../core/constants/constants.dart';
 
 class SearchResultPage extends StatelessWidget {
-  const SearchResultPage({Key? key}) : super(key: key);
+  const SearchResultPage({super.key});
 
   @override
   Widget build(BuildContext context) {

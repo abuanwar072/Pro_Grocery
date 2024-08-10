@@ -5,8 +5,8 @@ import '../../../core/constants/constants.dart';
 
 class SocialLogins extends StatelessWidget {
   const SocialLogins({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

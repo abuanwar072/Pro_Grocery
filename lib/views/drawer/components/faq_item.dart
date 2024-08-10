@@ -4,11 +4,11 @@ import '../../../core/constants/constants.dart';
 
 class TitleAndParagraph extends StatelessWidget {
   const TitleAndParagraph({
-    Key? key,
+    super.key,
     required this.title,
     required this.paragraph,
     this.isTitleHeadline = true,
-  }) : super(key: key);
+  });
 
   final String title;
   final String paragraph;

@@ -8,7 +8,7 @@ import 'components/help_topics.dart';
 import 'components/top_questions.dart';
 
 class HelpPage extends StatelessWidget {
-  const HelpPage({Key? key}) : super(key: key);
+  const HelpPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,9 +42,7 @@ class HelpPage extends StatelessWidget {
 }
 
 class _SearchBar extends StatelessWidget {
-  const _SearchBar({
-    Key? key,
-  }) : super(key: key);
+  const _SearchBar();
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +59,10 @@ class _SearchBar extends StatelessWidget {
               icon: SvgPicture.asset(
                 AppIcons.search,
                 width: 24,
-                color: AppColors.placeholder,
+                colorFilter: const ColorFilter.mode(
+                  AppColors.placeholder,
+                  BlendMode.srcIn,
+                ),
               ),
               onPressed: () {},
             ),

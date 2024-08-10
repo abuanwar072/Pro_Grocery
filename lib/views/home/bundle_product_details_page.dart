@@ -10,7 +10,7 @@ import 'components/bundle_meta_data.dart';
 import 'components/bundle_pack_details.dart';
 
 class BundleProductDetailsPage extends StatelessWidget {
-  const BundleProductDetailsPage({Key? key}) : super(key: key);
+  const BundleProductDetailsPage({super.key});
 
   @override
   Widget build(BuildContext context) {

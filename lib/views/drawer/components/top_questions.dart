@@ -6,8 +6,8 @@ import '../../../core/constants/constants.dart';
 
 class TopQuestions extends StatelessWidget {
   const TopQuestions({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -4,7 +4,7 @@ import '../../../core/components/app_back_button.dart';
 import '../../../core/constants/constants.dart';
 
 class ChangePhoneNumberPage extends StatelessWidget {
-  const ChangePhoneNumberPage({Key? key}) : super(key: key);
+  const ChangePhoneNumberPage({super.key});
 
   @override
   Widget build(BuildContext context) {

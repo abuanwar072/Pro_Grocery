@@ -4,10 +4,10 @@ import '../../../core/constants/constants.dart';
 
 class AnimatedDots extends StatelessWidget {
   const AnimatedDots({
-    Key? key,
+    super.key,
     required this.totalItems,
     required this.currentIndex,
-  }) : super(key: key);
+  });
 
   final int totalItems;
   final int currentIndex;

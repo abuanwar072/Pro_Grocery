@@ -4,7 +4,7 @@ import '../../core/components/network_image.dart';
 import '../../core/constants/app_defaults.dart';
 
 class EmptySavePage extends StatelessWidget {
-  const EmptySavePage({Key? key}) : super(key: key);
+  const EmptySavePage({super.key});
 
   @override
   Widget build(BuildContext context) {

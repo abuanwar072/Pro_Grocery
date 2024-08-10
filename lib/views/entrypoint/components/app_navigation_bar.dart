@@ -5,10 +5,10 @@ import 'bottom_app_bar_item.dart';
 
 class AppBottomNavigationBar extends StatelessWidget {
   const AppBottomNavigationBar({
-    Key? key,
+    super.key,
     required this.currentIndex,
     required this.onNavTap,
-  }) : super(key: key);
+  });
 
   final int currentIndex;
   final void Function(int) onNavTap;

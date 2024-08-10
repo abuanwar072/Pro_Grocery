@@ -6,7 +6,7 @@ import '../constants/constants.dart';
 import 'app_routes.dart';
 
 class UnknownPage extends StatelessWidget {
-  const UnknownPage({Key? key}) : super(key: key);
+  const UnknownPage({super.key});
 
   @override
   Widget build(BuildContext context) {

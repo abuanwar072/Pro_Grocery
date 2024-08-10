@@ -7,7 +7,7 @@ import '../../../core/constants/constants.dart';
 import '../../../core/routes/app_routes.dart';
 
 class AddressPage extends StatelessWidget {
-  const AddressPage({Key? key}) : super(key: key);
+  const AddressPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -62,12 +62,12 @@ class AddressPage extends StatelessWidget {
 
 class AddressTile extends StatelessWidget {
   const AddressTile({
-    Key? key,
+    super.key,
     required this.address,
     required this.label,
     required this.number,
     required this.isActive,
-  }) : super(key: key);
+  });
 
   final String address;
   final String label;

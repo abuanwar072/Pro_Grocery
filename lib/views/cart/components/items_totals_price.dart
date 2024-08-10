@@ -6,8 +6,8 @@ import 'item_row.dart';
 
 class ItemTotalsAndPrice extends StatelessWidget {
   const ItemTotalsAndPrice({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

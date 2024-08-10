@@ -6,7 +6,7 @@ import '../../../core/constants/app_defaults.dart';
 import '../../../core/components/app_back_button.dart';
 
 class NewAddressPage extends StatelessWidget {
-  const NewAddressPage({Key? key}) : super(key: key);
+  const NewAddressPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -111,8 +111,7 @@ class NewAddressPage extends StatelessWidget {
                 ],
               ),
               const Padding(
-                padding:
-                    EdgeInsets.symmetric(vertical: AppDefaults.padding),
+                padding: EdgeInsets.symmetric(vertical: AppDefaults.padding),
                 child: Row(
                   children: [
                     AppRadio(isActive: true),

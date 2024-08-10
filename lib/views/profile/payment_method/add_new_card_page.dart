@@ -8,7 +8,7 @@ import '../../../core/constants/app_defaults.dart';
 import '../../../core/components/app_back_button.dart';
 
 class AddNewCardPage extends StatefulWidget {
-  const AddNewCardPage({Key? key}) : super(key: key);
+  const AddNewCardPage({super.key});
 
   @override
   State<AddNewCardPage> createState() => _AddNewCardPageState();
@@ -89,7 +89,7 @@ class _AddNewCardPageState extends State<AddNewCardPage> {
 
 class CreditCardForm extends StatelessWidget {
   const CreditCardForm({
-    Key? key,
+    super.key,
     required this.cardNumber,
     required this.expireDate,
     required this.cvv,
@@ -97,7 +97,7 @@ class CreditCardForm extends StatelessWidget {
     required this.rememberMyCard,
     required this.onTextChanged,
     required this.onRememberMyCardChanged,
-  }) : super(key: key);
+  });
 
   final TextEditingController cardNumber;
   final TextEditingController expireDate;

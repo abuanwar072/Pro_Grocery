@@ -7,9 +7,9 @@ import 'network_image.dart';
 
 class BundleTileSquare extends StatelessWidget {
   const BundleTileSquare({
-    Key? key,
+    super.key,
     required this.data,
-  }) : super(key: key);
+  });
 
   final BundleModel data;
 

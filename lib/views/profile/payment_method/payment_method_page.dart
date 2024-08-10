@@ -8,7 +8,7 @@ import 'components/default_card.dart';
 import 'components/payment_option_tile.dart';
 
 class PaymentMethodPage extends StatelessWidget {
-  const PaymentMethodPage({Key? key}) : super(key: key);
+  const PaymentMethodPage({super.key});
 
   @override
   Widget build(BuildContext context) {

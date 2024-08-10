@@ -6,7 +6,7 @@ import '../../../core/components/app_settings_tile.dart';
 import '../../../core/constants/constants.dart';
 
 class NotificationSettingsPage extends StatelessWidget {
-  const NotificationSettingsPage({Key? key}) : super(key: key);
+  const NotificationSettingsPage({super.key});
 
   @override
   Widget build(BuildContext context) {

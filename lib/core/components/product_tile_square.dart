@@ -7,9 +7,9 @@ import 'network_image.dart';
 
 class ProductTileSquare extends StatelessWidget {
   const ProductTileSquare({
-    Key? key,
+    super.key,
     required this.data,
-  }) : super(key: key);
+  });
 
   final ProductModel data;
 

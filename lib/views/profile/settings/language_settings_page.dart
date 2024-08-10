@@ -7,7 +7,7 @@ import '../../../core/constants/constants.dart';
 import '../../../core/themes/app_themes.dart';
 
 class LanguageSettingsPage extends StatelessWidget {
-  const LanguageSettingsPage({Key? key}) : super(key: key);
+  const LanguageSettingsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -44,9 +44,7 @@ class LanguageSettingsPage extends StatelessWidget {
 }
 
 class _AllCountries extends StatelessWidget {
-  const _AllCountries({
-    Key? key,
-  }) : super(key: key);
+  const _AllCountries();
 
   @override
   Widget build(BuildContext context) {
@@ -68,9 +66,7 @@ class _AllCountries extends StatelessWidget {
 }
 
 class _SuggestedLanguage extends StatelessWidget {
-  const _SuggestedLanguage({
-    Key? key,
-  }) : super(key: key);
+  const _SuggestedLanguage();
 
   @override
   Widget build(BuildContext context) {
@@ -96,9 +92,7 @@ class _SuggestedLanguage extends StatelessWidget {
 }
 
 class _SearchField extends StatelessWidget {
-  const _SearchField({
-    Key? key,
-  }) : super(key: key);
+  const _SearchField();
 
   @override
   Widget build(BuildContext context) {

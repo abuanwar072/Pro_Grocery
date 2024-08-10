@@ -5,7 +5,7 @@ import '../../core/components/network_image.dart';
 import '../../core/constants/app_defaults.dart';
 
 class NotificationPage extends StatelessWidget {
-  const NotificationPage({Key? key}) : super(key: key);
+  const NotificationPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -81,12 +81,12 @@ class NotificationPage extends StatelessWidget {
 
 class NotificationTile extends StatelessWidget {
   const NotificationTile({
-    Key? key,
+    super.key,
     this.imageLink,
     required this.title,
     required this.subtitle,
     required this.time,
-  }) : super(key: key);
+  });
 
   final String? imageLink;
   final String title;

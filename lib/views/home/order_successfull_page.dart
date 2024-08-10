@@ -6,7 +6,7 @@ import '../../core/utils/ui_util.dart';
 import '../cart/dialogs/delivered_successfull.dart';
 
 class OrderSuccessfullPage extends StatelessWidget {
-  const OrderSuccessfullPage({Key? key}) : super(key: key);
+  const OrderSuccessfullPage({super.key});
 
   @override
   Widget build(BuildContext context) {

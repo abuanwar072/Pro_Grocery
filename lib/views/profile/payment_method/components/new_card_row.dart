@@ -6,8 +6,8 @@ import '../../../../core/routes/app_routes.dart';
 
 class AddNewCardRow extends StatelessWidget {
   const AddNewCardRow({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

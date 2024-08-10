@@ -3,8 +3,8 @@ import 'package:flutter_credit_card/flutter_credit_card.dart';
 
 class PaymentDefaultCard extends StatelessWidget {
   const PaymentDefaultCard({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

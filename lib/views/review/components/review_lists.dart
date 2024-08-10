@@ -4,8 +4,8 @@ import 'review_tile.dart';
 
 class ReviewLists extends StatelessWidget {
   const ReviewLists({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

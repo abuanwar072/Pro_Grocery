@@ -6,8 +6,8 @@ import '../../../core/constants/constants.dart';
 
 class SingleCartItemTile extends StatelessWidget {
   const SingleCartItemTile({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

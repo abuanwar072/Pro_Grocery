@@ -8,7 +8,7 @@ import 'data/onboarding_data.dart';
 import 'data/onboarding_model.dart';
 
 class OnboardingPage extends StatefulWidget {
-  const OnboardingPage({Key? key}) : super(key: key);
+  const OnboardingPage({super.key});
 
   @override
   State<OnboardingPage> createState() => _OnboardingPageState();
@@ -96,7 +96,10 @@ class _OnboardingPageState extends State<OnboardingPage> {
                   style: ElevatedButton.styleFrom(shape: const CircleBorder()),
                   child: SvgPicture.asset(
                     AppIcons.arrowForward,
-                    color: Colors.white,
+                    colorFilter: const ColorFilter.mode(
+                      Colors.white,
+                      BlendMode.srcIn,
+                    ),
                   ),
                 ),
               ],

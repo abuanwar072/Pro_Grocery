@@ -5,11 +5,11 @@ import '../constants/constants.dart';
 
 class PriceAndQuantityRow extends StatefulWidget {
   const PriceAndQuantityRow({
-    Key? key,
+    super.key,
     required this.currentPrice,
     required this.orginalPrice,
     required this.quantity,
-  }) : super(key: key);
+  });
 
   final double currentPrice;
   final double orginalPrice;

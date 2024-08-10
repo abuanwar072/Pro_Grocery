@@ -5,8 +5,8 @@ import '../../../core/constants/constants.dart';
 
 class ProductGridView extends StatelessWidget {
   const ProductGridView({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -7,7 +7,7 @@ import 'components/bundle_create_food_categories.dart';
 import 'components/product_grid_view.dart';
 
 class BundleCreatePage extends StatelessWidget {
-  const BundleCreatePage({Key? key}) : super(key: key);
+  const BundleCreatePage({super.key});
 
   @override
   Widget build(BuildContext context) {

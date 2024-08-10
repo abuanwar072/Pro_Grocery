@@ -6,7 +6,7 @@ import '../../../core/constants/app_images.dart';
 import '../../../core/routes/app_routes.dart';
 
 class VerifiedDialog extends StatelessWidget {
-  const VerifiedDialog({Key? key}) : super(key: key);
+  const VerifiedDialog({super.key});
 
   @override
   Widget build(BuildContext context) {

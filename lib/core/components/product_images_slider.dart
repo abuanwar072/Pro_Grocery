@@ -7,9 +7,9 @@ import 'network_image.dart';
 
 class ProductImagesSlider extends StatefulWidget {
   const ProductImagesSlider({
-    Key? key,
+    super.key,
     required this.images,
-  }) : super(key: key);
+  });
 
   final List<String> images;
 

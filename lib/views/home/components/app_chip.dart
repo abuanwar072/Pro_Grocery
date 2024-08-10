@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class AppChip extends StatelessWidget {
   const AppChip({
-    Key? key,
+    super.key,
     required this.isActive,
     required this.label,
     required this.onPressed,
-  }) : super(key: key);
+  });
 
   final bool isActive;
   final String label;

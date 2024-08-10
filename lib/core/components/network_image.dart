@@ -10,11 +10,11 @@ class NetworkImageWithLoader extends StatelessWidget {
   /// This widget is used for displaying network image with a placeholder
   const NetworkImageWithLoader(
     this.src, {
-    Key? key,
+    super.key,
     this.fit = BoxFit.cover,
     this.radius = AppDefaults.radius,
     this.borderRadius,
-  }) : super(key: key);
+  });
 
   final String src;
   final double radius;

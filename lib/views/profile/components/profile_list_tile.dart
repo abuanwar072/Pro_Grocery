@@ -5,11 +5,11 @@ import '../../../core/constants/constants.dart';
 
 class ProfileListTile extends StatelessWidget {
   const ProfileListTile({
-    Key? key,
+    super.key,
     required this.onTap,
     required this.icon,
     required this.title,
-  }) : super(key: key);
+  });
 
   final void Function() onTap;
   final String icon;

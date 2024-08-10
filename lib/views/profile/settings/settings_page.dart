@@ -7,7 +7,7 @@ import '../../../core/routes/app_routes.dart';
 import '../../../core/components/app_settings_tile.dart';
 
 class SettingsPage extends StatelessWidget {
-  const SettingsPage({Key? key}) : super(key: key);
+  const SettingsPage({super.key});
 
   @override
   Widget build(BuildContext context) {

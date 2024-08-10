@@ -5,7 +5,7 @@ import 'components/review_lists.dart';
 import 'components/review_overview.dart';
 
 class ReviewPage extends StatelessWidget {
-  const ReviewPage({Key? key}) : super(key: key);
+  const ReviewPage({super.key});
 
   @override
   Widget build(BuildContext context) {

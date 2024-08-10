@@ -1,7 +1,7 @@
 import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:grocery/core/constants/app_icons.dart';
+import '../../core/constants/app_icons.dart';
 
 import '../../core/constants/app_colors.dart';
 import '../../core/constants/app_defaults.dart';
@@ -14,7 +14,7 @@ import 'components/app_navigation_bar.dart';
 
 /// This page will contain all the bottom navigation tabs
 class EntryPointUI extends StatefulWidget {
-  const EntryPointUI({Key? key}) : super(key: key);
+  const EntryPointUI({super.key});
 
   @override
   State<EntryPointUI> createState() => _EntryPointUIState();

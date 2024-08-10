@@ -5,7 +5,7 @@ import '../../core/components/product_tile_square.dart';
 import '../../core/constants/constants.dart';
 
 class CategoryProductPage extends StatelessWidget {
-  const CategoryProductPage({Key? key}) : super(key: key);
+  const CategoryProductPage({super.key});
 
   @override
   Widget build(BuildContext context) {

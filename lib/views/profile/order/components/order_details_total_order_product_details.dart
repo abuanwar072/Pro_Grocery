@@ -5,8 +5,8 @@ import 'order_details_product_tile.dart';
 
 class TotalOrderProductDetails extends StatelessWidget {
   const TotalOrderProductDetails({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

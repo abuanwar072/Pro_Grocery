@@ -4,7 +4,7 @@ import '../../core/components/app_back_button.dart';
 import '../../core/constants/app_defaults.dart';
 
 class AboutUsPage extends StatelessWidget {
-  const AboutUsPage({Key? key}) : super(key: key);
+  const AboutUsPage({super.key});
 
   @override
   Widget build(BuildContext context) {

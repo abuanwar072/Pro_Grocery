@@ -8,7 +8,7 @@ import 'components/checkout_card_details.dart';
 import 'components/checkout_payment_systems.dart';
 
 class CheckoutPage extends StatelessWidget {
-  const CheckoutPage({Key? key}) : super(key: key);
+  const CheckoutPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,8 +34,8 @@ class CheckoutPage extends StatelessWidget {
 
 class PayNowButton extends StatelessWidget {
   const PayNowButton({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

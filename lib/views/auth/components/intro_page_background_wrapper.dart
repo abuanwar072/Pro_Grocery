@@ -5,9 +5,9 @@ import '../../../core/components/skeleton.dart';
 
 class IntroLoginBackgroundWrapper extends StatelessWidget {
   const IntroLoginBackgroundWrapper({
-    Key? key,
+    super.key,
     required this.imageURL,
-  }) : super(key: key);
+  });
 
   final String imageURL;
 
@@ -26,9 +26,8 @@ class IntroLoginBackgroundWrapper extends StatelessWidget {
 
 class _IntroLoginBody extends StatelessWidget {
   const _IntroLoginBody({
-    Key? key,
     required this.image,
-  }) : super(key: key);
+  });
 
   final ImageProvider image;
 

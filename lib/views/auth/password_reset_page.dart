@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:grocery/core/routes/app_routes.dart';
+import '../../core/routes/app_routes.dart';
 
 import '../../core/components/app_back_button.dart';
 import '../../core/constants/constants.dart';
 
 class PasswordResetPage extends StatelessWidget {
-  const PasswordResetPage({Key? key}) : super(key: key);
+  const PasswordResetPage({super.key});
 
   @override
   Widget build(BuildContext context) {

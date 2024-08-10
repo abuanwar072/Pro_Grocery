@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class BundleMetaData extends StatelessWidget {
   const BundleMetaData({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

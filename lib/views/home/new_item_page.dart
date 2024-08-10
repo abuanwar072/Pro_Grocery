@@ -5,7 +5,7 @@ import '../../core/components/product_tile_square.dart';
 import '../../core/constants/constants.dart';
 
 class NewItemsPage extends StatelessWidget {
-  const NewItemsPage({Key? key}) : super(key: key);
+  const NewItemsPage({super.key});
 
   @override
   Widget build(BuildContext context) {

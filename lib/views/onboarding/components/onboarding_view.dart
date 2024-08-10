@@ -6,9 +6,9 @@ import '../data/onboarding_model.dart';
 
 class OnboardingView extends StatelessWidget {
   const OnboardingView({
-    Key? key,
+    super.key,
     required this.data,
-  }) : super(key: key);
+  });
 
   final OnboardingModel data;
 

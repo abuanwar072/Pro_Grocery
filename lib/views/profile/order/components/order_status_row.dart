@@ -7,14 +7,14 @@ import 'order_details_vertical_step_indicator.dart';
 
 class OrderStatusRow extends StatelessWidget {
   const OrderStatusRow({
-    Key? key,
+    super.key,
     required this.status,
     required this.date,
     required this.time,
     this.isActive = false,
     this.isStart = false,
     this.isEnd = false,
-  }) : super(key: key);
+  });
 
   final OrderStatus status;
   final String date;

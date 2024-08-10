@@ -5,10 +5,10 @@ import '../constants/constants.dart';
 
 class BuyNowRow extends StatelessWidget {
   const BuyNowRow({
-    Key? key,
+    super.key,
     required this.onCartButtonTap,
     required this.onBuyButtonTap,
-  }) : super(key: key);
+  });
 
   final void Function() onCartButtonTap;
   final void Function() onBuyButtonTap;

@@ -7,8 +7,8 @@ import '../../../core/routes/app_routes.dart';
 
 class OurNewItem extends StatelessWidget {
   const OurNewItem({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

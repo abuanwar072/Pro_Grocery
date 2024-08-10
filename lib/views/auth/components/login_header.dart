@@ -5,8 +5,8 @@ import '../../../core/constants/constants.dart';
 
 class LoginPageHeader extends StatelessWidget {
   const LoginPageHeader({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

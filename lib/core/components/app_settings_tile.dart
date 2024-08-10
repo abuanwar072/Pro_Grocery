@@ -4,11 +4,11 @@ import '../constants/app_defaults.dart';
 
 class AppSettingsListTile extends StatelessWidget {
   const AppSettingsListTile({
-    Key? key,
+    super.key,
     required this.label,
     this.trailing,
     this.onTap,
-  }) : super(key: key);
+  });
 
   final String label;
   final Widget? trailing;

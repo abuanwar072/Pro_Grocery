@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:grocery/core/constants/app_icons.dart';
+import '../../core/constants/app_icons.dart';
 
 import '../../core/constants/app_defaults.dart';
 import '../../core/routes/app_routes.dart';
@@ -9,7 +9,7 @@ import 'components/our_new_item.dart';
 import 'components/popular_packs.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
