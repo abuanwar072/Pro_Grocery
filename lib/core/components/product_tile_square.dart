@@ -51,14 +51,13 @@ class ProductTileSquare extends StatelessWidget {
                       .textTheme
                       .titleMedium
                       ?.copyWith(color: Colors.black),
-                  maxLines: 2,
+                  maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                 ),
                 const Spacer(),
                 Text(
                   data.weight,
                 ),
-                const SizedBox(height: 4),
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.end,

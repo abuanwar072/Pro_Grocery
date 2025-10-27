@@ -60,10 +60,10 @@ class AppTheme {
       ),
       inputDecorationTheme: defaultInputDecorationTheme,
       sliderTheme: const SliderThemeData(
-        showValueIndicator: ShowValueIndicator.always,
+        showValueIndicator: ShowValueIndicator.alwaysVisible,
         thumbColor: Colors.white,
       ),
-      tabBarTheme: const TabBarTheme(
+      tabBarTheme: const TabBarThemeData(
         labelColor: AppColors.primary,
         unselectedLabelColor: AppColors.placeholder,
         labelPadding: EdgeInsets.all(AppDefaults.padding),
