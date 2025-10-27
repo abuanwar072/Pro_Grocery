@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/constants/constants.dart';
 
 class CouponCodeField extends StatefulWidget {
-  const CouponCodeField({
-    super.key,
-  });
+  const CouponCodeField({super.key});
 
   @override
   State<CouponCodeField> createState() => _CouponCodeFieldState();
@@ -48,10 +46,10 @@ class _CouponCodeFieldState extends State<CouponCodeField> {
             alignment: Alignment.centerLeft,
             child: Text(
               'Add Coupon',
-              style: Theme.of(context)
-                  .textTheme
-                  .bodyLarge
-                  ?.copyWith(fontWeight: FontWeight.bold, color: Colors.black),
+              style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
             ),
           ),
           const SizedBox(height: 16),
@@ -76,8 +74,9 @@ class _CouponCodeFieldState extends State<CouponCodeField> {
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
                     foregroundColor: isFilled ? null : AppColors.placeholder,
-                    backgroundColor:
-                        isFilled ? null : Colors.grey.withOpacity(0.3),
+                    backgroundColor: isFilled
+                        ? null
+                        : Colors.grey.withValues(alpha: 0.3),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8),
                     ),

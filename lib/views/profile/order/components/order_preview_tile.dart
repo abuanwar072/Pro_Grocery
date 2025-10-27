@@ -32,9 +32,7 @@ class OrderPreviewTile extends StatelessWidget {
           borderRadius: AppDefaults.borderRadius,
           child: Container(
             padding: const EdgeInsets.all(AppDefaults.padding),
-            decoration: BoxDecoration(
-              borderRadius: AppDefaults.borderRadius,
-            ),
+            decoration: BoxDecoration(borderRadius: AppDefaults.borderRadius),
             child: Column(
               children: [
                 Row(
@@ -43,10 +41,9 @@ class OrderPreviewTile extends StatelessWidget {
                     const SizedBox(width: 5),
                     Text(
                       '2324252627',
-                      style: Theme.of(context)
-                          .textTheme
-                          .bodyLarge
-                          ?.copyWith(color: Colors.black),
+                      style: Theme.of(
+                        context,
+                      ).textTheme.bodyLarge?.copyWith(color: Colors.black),
                     ),
                     const Spacer(),
                     const Text('25 Nov'),
@@ -62,7 +59,9 @@ class OrderPreviewTile extends StatelessWidget {
                         divisions: 3,
                         onChanged: (v) {},
                         activeColor: _orderColor(),
-                        inactiveColor: AppColors.placeholder.withOpacity(0.2),
+                        inactiveColor: AppColors.placeholder.withValues(
+                          alpha: 0.2,
+                        ),
                       ),
                     ),
                   ],
@@ -77,9 +76,7 @@ class OrderPreviewTile extends StatelessWidget {
                             opacity: status == OrderStatus.confirmed ? 1 : 0,
                             child: Text(
                               'Confirmed',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodyLarge
+                              style: Theme.of(context).textTheme.bodyLarge
                                   ?.copyWith(color: _orderColor()),
                             ),
                           ),
@@ -87,9 +84,7 @@ class OrderPreviewTile extends StatelessWidget {
                             opacity: status == OrderStatus.processing ? 1 : 0,
                             child: Text(
                               'Processing',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodyLarge
+                              style: Theme.of(context).textTheme.bodyLarge
                                   ?.copyWith(color: _orderColor()),
                             ),
                           ),
@@ -97,14 +92,13 @@ class OrderPreviewTile extends StatelessWidget {
                             opacity: status == OrderStatus.shipped ? 1 : 0,
                             child: Text(
                               'Shipped',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodyLarge
+                              style: Theme.of(context).textTheme.bodyLarge
                                   ?.copyWith(color: _orderColor()),
                             ),
                           ),
                           Opacity(
-                            opacity: status == OrderStatus.delivery ||
+                            opacity:
+                                status == OrderStatus.delivery ||
                                     status == OrderStatus.cancelled
                                 ? 1
                                 : 0,
@@ -112,17 +106,15 @@ class OrderPreviewTile extends StatelessWidget {
                               status == OrderStatus.delivery
                                   ? 'Delivery'
                                   : 'Cancelled',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .bodyLarge
+                              style: Theme.of(context).textTheme.bodyLarge
                                   ?.copyWith(color: _orderColor()),
                             ),
                           ),
                         ],
                       ),
-                    )
+                    ),
                   ],
-                )
+                ),
               ],
             ),
           ),
@@ -143,9 +135,6 @@ class OrderPreviewTile extends StatelessWidget {
         return 3;
       case OrderStatus.cancelled:
         return 3;
-
-      default:
-        return 0;
     }
   }
 
@@ -161,9 +150,6 @@ class OrderPreviewTile extends StatelessWidget {
         return const Color(0xFF41AA55);
       case OrderStatus.cancelled:
         return const Color(0xFFFF1F1F);
-
-      default:
-        return Colors.red;
     }
   }
 }

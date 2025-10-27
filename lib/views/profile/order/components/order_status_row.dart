@@ -26,8 +26,9 @@ class OrderStatusRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      crossAxisAlignment:
-          isStart ? CrossAxisAlignment.start : CrossAxisAlignment.center,
+      crossAxisAlignment: isStart
+          ? CrossAxisAlignment.start
+          : CrossAxisAlignment.center,
       children: [
         Container(
           padding: const EdgeInsets.all(8.0),
@@ -48,27 +49,21 @@ class OrderStatusRow extends StatelessWidget {
             children: [
               Text(
                 _orderStatus(),
-                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                      color: Colors.black,
-                    ),
+                style: Theme.of(
+                  context,
+                ).textTheme.bodyLarge?.copyWith(color: Colors.black),
               ),
               const SizedBox(height: 4),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    date,
-                    style: Theme.of(context).textTheme.bodySmall,
-                  ),
-                  Text(
-                    time,
-                    style: Theme.of(context).textTheme.bodySmall,
-                  ),
+                  Text(date, style: Theme.of(context).textTheme.bodySmall),
+                  Text(time, style: Theme.of(context).textTheme.bodySmall),
                 ],
               ),
             ],
           ),
-        )
+        ),
       ],
     );
   }
@@ -85,9 +80,6 @@ class OrderStatusRow extends StatelessWidget {
         return const Color(0xFF30DFB8);
       case OrderStatus.cancelled:
         return const Color(0xFFFF1F1F);
-
-      default:
-        return Colors.red;
     }
   }
 
@@ -103,9 +95,6 @@ class OrderStatusRow extends StatelessWidget {
         return 'Order Delivered';
       case OrderStatus.cancelled:
         return 'Order Cancelled';
-
-      default:
-        return 'Order null';
     }
   }
 
@@ -120,9 +109,6 @@ class OrderStatusRow extends StatelessWidget {
       case OrderStatus.delivery:
         return AppIcons.orderDelivered;
       case OrderStatus.cancelled:
-        return AppIcons.delete;
-
-      default:
         return AppIcons.delete;
     }
   }
